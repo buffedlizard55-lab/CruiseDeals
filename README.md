@@ -16,7 +16,7 @@ A static GitHub Pages research table for cruises departing U.S. West Coast ports
 
 This repository intentionally separates a **schedule + price snapshot** from a live quote. Price snapshots can change, and may not include optional extras. Rows sourced from an index without a published price are flagged for review; the two departures outside the requested date window are explicitly excluded. Confirm cabin category, taxes, availability, and promotions on the official cruise-line page before booking.
 
-The research snapshot is dated **2026-08-27 UTC**. It is not a booking engine and makes no guarantee of availability.
+The research snapshot is dated **2026-08-27 UTC**. Five Princess travel-seller snapshots are explicitly retained in GBP and flagged for review; they are not converted to USD or treated as official quotes. Schedule-index rows are also flagged where the exact official sailing record was not available. The project is not a booking engine and makes no guarantee of availability.
 
 ## GitHub Pages
 
