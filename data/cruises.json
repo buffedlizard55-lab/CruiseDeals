@@ -23,7 +23,8 @@
     "trip_total_2": "$4,882",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-14%2C%20return%202027-02-20"
   },
   {
     "id": "SD-02",
@@ -49,7 +50,8 @@
     "trip_total_2": "$3,820",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-18%2C%20return%202027-02-23"
   },
   {
     "id": "SD-03",
@@ -75,7 +77,8 @@
     "trip_total_2": "$4,028",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-21%2C%20return%202027-02-27"
   },
   {
     "id": "SD-04",
@@ -101,7 +104,8 @@
     "trip_total_2": "$3,820",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-25%2C%20return%202027-03-02"
   },
   {
     "id": "SD-05",
@@ -127,7 +131,8 @@
     "trip_total_2": "$4,134",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-28%2C%20return%202027-03-06"
   },
   {
     "id": "SD-06",
@@ -153,7 +158,8 @@
     "trip_total_2": "$3,880",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-04%2C%20return%202027-03-09"
   },
   {
     "id": "SD-07",
@@ -179,7 +185,8 @@
     "trip_total_2": "$3,602",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-11%2C%20return%202027-03-20"
   },
   {
     "id": "SD-08",
@@ -205,7 +212,8 @@
     "trip_total_2": "$4,204",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-18%2C%20return%202027-03-23"
   },
   {
     "id": "SD-09",
@@ -231,7 +239,8 @@
     "trip_total_2": "$5,960",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-21%2C%20return%202027-03-27"
   },
   {
     "id": "SD-10",
@@ -257,7 +266,8 @@
     "trip_total_2": "$3,820",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-25%2C%20return%202027-03-30"
   },
   {
     "id": "SD-11",
@@ -283,7 +293,8 @@
     "trip_total_2": "$3,664",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-28%2C%20return%202027-04-03"
   },
   {
     "id": "SD-12",
@@ -309,7 +320,8 @@
     "trip_total_2": "$888",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-17%2C%20return%202027-02-22"
   },
   {
     "id": "SD-13",
@@ -335,7 +347,8 @@
     "trip_total_2": "$996",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-20%2C%20return%202027-02-26"
   },
   {
     "id": "SD-14",
@@ -361,7 +374,8 @@
     "trip_total_2": "$982",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-24%2C%20return%202027-03-01"
   },
   {
     "id": "SD-15",
@@ -387,7 +401,8 @@
     "trip_total_2": "$1,030",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-06%2C%20return%202027-03-12"
   },
   {
     "id": "SD-16",
@@ -413,7 +428,8 @@
     "trip_total_2": "$1,010",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-10%2C%20return%202027-03-15"
   },
   {
     "id": "SD-17",
@@ -439,7 +455,8 @@
     "trip_total_2": "$1,038",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-13%2C%20return%202027-03-19"
   },
   {
     "id": "SD-18",
@@ -465,7 +482,8 @@
     "trip_total_2": "$982",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-17%2C%20return%202027-03-22"
   },
   {
     "id": "SD-19",
@@ -491,7 +509,8 @@
     "trip_total_2": "$1,030",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-20%2C%20return%202027-03-26"
   },
   {
     "id": "SD-20",
@@ -517,7 +536,8 @@
     "trip_total_2": "$982",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-24%2C%20return%202027-03-29"
   },
   {
     "id": "SD-21",
@@ -543,7 +563,8 @@
     "trip_total_2": "$1,370",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-27%2C%20return%202027-04-05"
   },
   {
     "id": "SD-22",
@@ -569,7 +590,8 @@
     "trip_total_2": "$2,400",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-19%2C%20return%202027-03-28"
   },
   {
     "id": "SD-23",
@@ -595,7 +617,8 @@
     "trip_total_2": "$4,260",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-19%2C%20return%202027-04-04"
   },
   {
     "id": "SD-24",
@@ -621,7 +644,8 @@
     "trip_total_2": "$4,430",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-03-19%2C%20return%202027-04-08"
   },
   {
     "id": "LA-25",
@@ -647,7 +671,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-14%2C%20return%202027-02-20"
   },
   {
     "id": "LA-26",
@@ -673,7 +698,8 @@
     "trip_total_2": "$1,050",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-20%2C%20return%202027-02-28"
   },
   {
     "id": "LA-27",
@@ -699,7 +725,8 @@
     "trip_total_2": "$1,340",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-26%2C%20return%202027-03-08"
   },
   {
     "id": "LA-28",
@@ -725,7 +752,8 @@
     "trip_total_2": "$1,142",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-27%2C%20return%202027-03-05"
   },
   {
     "id": "LA-29",
@@ -751,7 +779,8 @@
     "trip_total_2": "$1,142",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-18%2C%20return%202027-02-23"
   },
   {
     "id": "LA-30",
@@ -777,7 +806,8 @@
     "trip_total_2": "$1,226",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-21%2C%20return%202027-02-27"
   },
   {
     "id": "LA-31",
@@ -803,7 +833,8 @@
     "trip_total_2": "$1,752",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-20%2C%20return%202027-03-01"
   },
   {
     "id": "LA-32",
@@ -829,7 +860,8 @@
     "trip_total_2": "$1,632",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-02-27%2C%20return%202027-03-08"
   },
   {
     "id": "LA-33",
@@ -855,7 +887,8 @@
     "trip_total_2": "$1,632",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-06%2C%20return%202027-03-15"
   },
   {
     "id": "LA-34",
@@ -881,7 +914,8 @@
     "trip_total_2": "$1,732",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-13%2C%20return%202027-03-22"
   },
   {
     "id": "LA-35",
@@ -907,7 +941,8 @@
     "trip_total_2": "$1,772",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-20%2C%20return%202027-03-29"
   },
   {
     "id": "LA-36",
@@ -933,7 +968,8 @@
     "trip_total_2": "$1,832",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-27%2C%20return%202027-04-05"
   },
   {
     "id": "LA-43",
@@ -959,7 +995,8 @@
     "trip_total_2": "Not computable \u2014 currency mismatch",
     "trip_total_note": "Cruise price is GBP; flight estimate is USD. Convert only after live quotes.",
     "price_currency": "GBP",
-    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote."
+    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-09%2C%20return%202027-03-18"
   },
   {
     "id": "LA-44",
@@ -985,7 +1022,8 @@
     "trip_total_2": "Not computable \u2014 currency mismatch",
     "trip_total_note": "Cruise price is GBP; flight estimate is USD. Convert only after live quotes.",
     "price_currency": "GBP",
-    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote."
+    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-13%2C%20return%202027-03-22"
   },
   {
     "id": "LA-45",
@@ -1011,7 +1049,8 @@
     "trip_total_2": "Not computable \u2014 currency mismatch",
     "trip_total_note": "Cruise price is GBP; flight estimate is USD. Convert only after live quotes.",
     "price_currency": "GBP",
-    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote."
+    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-16%2C%20return%202027-03-30"
   },
   {
     "id": "LA-46",
@@ -1037,7 +1076,8 @@
     "trip_total_2": "Not computable \u2014 currency mismatch",
     "trip_total_note": "Cruise price is GBP; flight estimate is USD. Convert only after live quotes.",
     "price_currency": "GBP",
-    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote."
+    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-18%2C%20return%202027-03-30"
   },
   {
     "id": "LA-47",
@@ -1063,7 +1103,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-23%2C%20return%202027-04-01"
   },
   {
     "id": "LA-48",
@@ -1089,7 +1130,8 @@
     "trip_total_2": "Not computable \u2014 currency mismatch",
     "trip_total_note": "Cruise price is GBP; flight estimate is USD. Convert only after live quotes.",
     "price_currency": "GBP",
-    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote."
+    "verification_note": "Price is a GBP package/listing snapshot from a non-US travel seller; not converted to USD and not an official Princess quote.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-30%2C%20return%202027-04-22"
   },
   {
     "id": "LA-51",
@@ -1115,7 +1157,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation."
+    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-01%2C%20return%20Not%20published%20%E2%80%94%20duration%20pending%20official%20confirmation"
   },
   {
     "id": "LA-52",
@@ -1141,7 +1184,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation."
+    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-04%2C%20return%20Not%20published%20%E2%80%94%20duration%20pending%20official%20confirmation"
   },
   {
     "id": "LA-53",
@@ -1167,7 +1211,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation."
+    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-11%2C%20return%20Not%20published%20%E2%80%94%20duration%20pending%20official%20confirmation"
   },
   {
     "id": "LA-54",
@@ -1193,7 +1238,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation."
+    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-18%2C%20return%20Not%20published%20%E2%80%94%20duration%20pending%20official%20confirmation"
   },
   {
     "id": "LA-55",
@@ -1219,7 +1265,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation."
+    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-25%2C%20return%20Not%20published%20%E2%80%94%20duration%20pending%20official%20confirmation"
   },
   {
     "id": "LA-56",
@@ -1245,7 +1292,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation."
+    "verification_note": "Schedule appears in a departure index, but exact official sailing, duration, itinerary, and price require confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20LAX%202027-03-27%2C%20return%20Not%20published%20%E2%80%94%20duration%20pending%20official%20confirmation"
   },
   {
     "id": "SD-49",
@@ -1271,7 +1319,8 @@
     "trip_total_2": "$4,212",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-11%2C%20return%202027-02-16"
   },
   {
     "id": "SD-50",
@@ -1297,7 +1346,8 @@
     "trip_total_2": "Not computable",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SAN%202027-02-12%2C%20return%202027-03-21"
   },
   {
     "id": "SF-51",
@@ -1323,7 +1373,8 @@
     "trip_total_2": "$3,558",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SFO%202027-02-27%2C%20return%202027-03-17"
   },
   {
     "id": "SF-52",
@@ -1349,6 +1400,7 @@
     "trip_total_2": "$2,678",
     "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required.",
     "price_currency": "USD",
-    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation."
+    "verification_note": "Schedule and price snapshot from linked trusted source; official page linked for current confirmation.",
+    "flight_search_url": "https://www.google.com/travel/flights?q=Flights%20from%20SFO%20to%20SFO%202027-03-15%2C%20return%202027-04-02"
   }
 ]

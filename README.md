@@ -24,3 +24,4 @@ The published page is in [`docs/`](docs/). The machine-readable files are:
 
 - [`data/cruises_master_verified.csv`](data/cruises_master_verified.csv)
 - [`data/cruises.json`](data/cruises.json)
+- [`data/cruise_line_scope_audit.csv`](data/cruise_line_scope_audit.csv) — lines reviewed for inclusion; unrepresented lines are not claimed to have qualifying sailings.
