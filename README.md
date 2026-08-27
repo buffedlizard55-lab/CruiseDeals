@@ -4,11 +4,12 @@ A static GitHub Pages research table for cruises departing U.S. West Coast ports
 
 ## Included
 
-- 50 research records: **48 in-window sailings** plus **2 out-of-window records retained for audit**.
+- 52 research records: **50 in-window sailings** plus **2 out-of-window records retained for audit**.
 - Departure cities: San Diego, Los Angeles/Long Beach, and San Francisco.
 - Cruise lines represented: Carnival, Disney, Holland America, Norwegian, Princess, and Royal Caribbean.
 - Search and filter by ship, cruise line, departure port, price availability, and audit status.
-- Total-for-two price snapshots where an indexed source published an interior rate; otherwise the table says **Not published** rather than guessing.
+- Total-for-two cruise price snapshots where an indexed source published an interior rate; otherwise the table says **Not published** rather than guessing.
+- Flight planning dates and cost estimates for two adults flying from SFO one day before departure and returning one day after the cruise. These use linked route averages—not date-specific live quotes—and the UI links to route searches for live confirmation.
 - Official cruise-line links are provided for manual confirmation. Linked timetable/aggregator sources are disclosed in the source-trail column.
 
 ## Verification policy

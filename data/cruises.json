@@ -13,7 +13,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No sailing-specific promo verified",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-14",
+    "flight_return_date": "2027-02-20",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,882",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-02",
@@ -29,7 +37,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No sailing-specific promo verified",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-18",
+    "flight_return_date": "2027-02-23",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$3,820",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-03",
@@ -45,7 +61,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No sailing-specific promo verified",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-21",
+    "flight_return_date": "2027-02-27",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,028",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-04",
@@ -61,7 +85,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No sailing-specific promo verified",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-25",
+    "flight_return_date": "2027-03-02",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$3,820",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-05",
@@ -77,7 +109,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-28",
+    "flight_return_date": "2027-03-06",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,134",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-06",
@@ -93,7 +133,15 @@
     "official": "https://www.icruise.com/itineraries/3-night-baja-cruise_disney-wonder_3-5-2027.html",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.icruise.com/itineraries/3-night-baja-cruise_disney-wonder_3-5-2027.html"
+    "source_url": "https://www.icruise.com/itineraries/3-night-baja-cruise_disney-wonder_3-5-2027.html",
+    "flight_out_date": "2027-03-04",
+    "flight_return_date": "2027-03-09",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$3,880",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-07",
@@ -109,7 +157,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-11",
+    "flight_return_date": "2027-03-20",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$3,602",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-08",
@@ -125,7 +181,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-18",
+    "flight_return_date": "2027-03-23",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,204",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-09",
@@ -141,7 +205,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-21",
+    "flight_return_date": "2027-03-27",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$5,960",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-10",
@@ -157,7 +229,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-25",
+    "flight_return_date": "2027-03-30",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$3,820",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-11",
@@ -173,7 +253,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-28",
+    "flight_return_date": "2027-04-03",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$3,664",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-12",
@@ -189,7 +277,15 @@
     "official": "https://www.royalcaribbean.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-02-17",
+    "flight_return_date": "2027-02-22",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$888",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-13",
@@ -205,7 +301,15 @@
     "official": "https://www.royalcaribbean.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-02-20",
+    "flight_return_date": "2027-02-26",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$996",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-14",
@@ -221,7 +325,15 @@
     "official": "https://www.royalcaribbean.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-02-24",
+    "flight_return_date": "2027-03-01",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$982",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-15",
@@ -237,7 +349,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/4-night-catalina-ensenada-cruise-from-san-diego-on-serenade-SR04X058",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-06",
+    "flight_return_date": "2027-03-12",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$1,030",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-16",
@@ -253,7 +373,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/3-night-ensenada-cruise-from-san-diego-on-serenade-SR03X043",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-10",
+    "flight_return_date": "2027-03-15",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$1,010",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-17",
@@ -269,7 +397,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/4-night-catalina-ensenada-cruise-from-san-diego-on-serenade-SR04X058",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-13",
+    "flight_return_date": "2027-03-19",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$1,038",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-18",
@@ -285,7 +421,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/3-night-ensenada-cruise-from-san-diego-on-serenade-SR03X043",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-17",
+    "flight_return_date": "2027-03-22",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$982",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-19",
@@ -301,7 +445,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/4-night-catalina-ensenada-cruise-from-san-diego-on-serenade-SR04X058",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-20",
+    "flight_return_date": "2027-03-26",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$1,030",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-20",
@@ -317,7 +469,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/3-night-ensenada-cruise-from-san-diego-on-serenade-SR03X043",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-24",
+    "flight_return_date": "2027-03-29",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$982",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-21",
@@ -333,7 +493,15 @@
     "official": "https://www.royalcaribbean.com/itinerary/7-night-ensenada-cabo-mazatlan-cruise-from-san-diego-on-serenade-SR07X071",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-27",
+    "flight_return_date": "2027-04-05",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$1,370",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-22",
@@ -349,7 +517,15 @@
     "official": "https://www.hollandamerica.com/en/us/find-a-cruise",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-19",
+    "flight_return_date": "2027-03-28",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$2,400",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-23",
@@ -365,7 +541,15 @@
     "official": "https://www.hollandamerica.com/en/us/find-a-cruise",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-19",
+    "flight_return_date": "2027-04-04",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,260",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-24",
@@ -381,7 +565,15 @@
     "official": "https://www.hollandamerica.com/en/us/find-a-cruise",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-03-19",
+    "flight_return_date": "2027-04-08",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,430",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-25",
@@ -397,7 +589,15 @@
     "official": "https://www.royalcaribbean.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february"
+    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february",
+    "flight_out_date": "2027-02-14",
+    "flight_return_date": "2027-02-20",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-26",
@@ -413,7 +613,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-20",
+    "flight_return_date": "2027-02-28",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,050",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-27",
@@ -429,7 +637,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-26",
+    "flight_return_date": "2027-03-08",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,340",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-28",
@@ -445,7 +661,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february"
+    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february",
+    "flight_out_date": "2027-02-27",
+    "flight_return_date": "2027-03-05",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,142",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-29",
@@ -461,7 +685,15 @@
     "official": "https://www.royalcaribbean.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february"
+    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february",
+    "flight_out_date": "2027-02-18",
+    "flight_return_date": "2027-02-23",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,142",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-30",
@@ -477,7 +709,15 @@
     "official": "https://www.royalcaribbean.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february"
+    "source_url": "https://www.taoticket.com/en_US/port-cruise/los-angeles/february",
+    "flight_out_date": "2027-02-21",
+    "flight_return_date": "2027-02-27",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,226",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-31",
@@ -493,7 +733,15 @@
     "official": "https://www.ncl.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html"
+    "source_url": "https://www.cruisetimetables.com/san-diego-california-cruise-ship-schedule-2027.html",
+    "flight_out_date": "2027-02-20",
+    "flight_return_date": "2027-03-01",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,752",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-32",
@@ -509,7 +757,15 @@
     "official": "https://www.ncl.com/cruises",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-02-27",
+    "flight_return_date": "2027-03-08",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,632",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-33",
@@ -525,7 +781,15 @@
     "official": "https://www.ncl.com/cruises",
     "promo": "Free at Sea / 2nd guest free / reduced deposit / onboard credit listed by schedule source",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html"
+    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html",
+    "flight_out_date": "2027-03-06",
+    "flight_return_date": "2027-03-15",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,632",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-34",
@@ -541,7 +805,15 @@
     "official": "https://www.ncl.com/cruises",
     "promo": "Free at Sea / 2nd guest free / reduced deposit / onboard credit listed by schedule source",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html"
+    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html",
+    "flight_out_date": "2027-03-13",
+    "flight_return_date": "2027-03-22",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,732",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-35",
@@ -557,7 +829,15 @@
     "official": "https://www.ncl.com/cruises",
     "promo": "Free at Sea / 2nd guest free / reduced deposit / onboard credit listed by schedule source",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html"
+    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html",
+    "flight_out_date": "2027-03-20",
+    "flight_return_date": "2027-03-29",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,772",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-36",
@@ -573,7 +853,15 @@
     "official": "https://www.ncl.com/cruises",
     "promo": "Free at Sea / 2nd guest free / reduced deposit / onboard credit listed by schedule source",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html"
+    "source_url": "https://www.icruise.com/ships/norwegian-cruise-line-norwegian-encore-cruise-itineraries-march-2027.html",
+    "flight_out_date": "2027-03-27",
+    "flight_return_date": "2027-04-05",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,832",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-43",
@@ -589,7 +877,15 @@
     "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-los-angeles",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-09",
+    "flight_return_date": "2027-03-18",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$4,052",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-44",
@@ -605,7 +901,15 @@
     "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-los-angeles",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-13",
+    "flight_return_date": "2027-03-22",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$1,532",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-45",
@@ -621,7 +925,15 @@
     "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-los-angeles",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-16",
+    "flight_return_date": "2027-03-30",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$4,752",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-46",
@@ -637,7 +949,15 @@
     "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-los-angeles",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-18",
+    "flight_return_date": "2027-03-30",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$4,052",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-47",
@@ -653,7 +973,15 @@
     "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-los-angeles",
     "promo": "No verified sailing-specific promotion found.",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-23",
+    "flight_return_date": "2027-04-01",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-48",
@@ -669,7 +997,15 @@
     "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-los-angeles",
     "promo": "Up to $600 onboard credit on the 31 Mar package listing",
     "status": "Schedule + price snapshot",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-30",
+    "flight_return_date": "2027-04-22",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "$4,952",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-51",
@@ -685,7 +1021,15 @@
     "official": "https://www.princess.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "SCHEDULE INDEX \u2014 price/itinerary pending official confirmation",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-01",
+    "flight_return_date": "Not published \u2014 duration pending official confirmation",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-52",
@@ -701,7 +1045,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "SCHEDULE INDEX \u2014 price/itinerary pending official confirmation",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-04",
+    "flight_return_date": "Not published \u2014 duration pending official confirmation",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-53",
@@ -717,7 +1069,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "SCHEDULE INDEX \u2014 price/itinerary pending official confirmation",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-11",
+    "flight_return_date": "Not published \u2014 duration pending official confirmation",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-54",
@@ -733,7 +1093,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "SCHEDULE INDEX \u2014 price/itinerary pending official confirmation",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-18",
+    "flight_return_date": "Not published \u2014 duration pending official confirmation",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-55",
@@ -749,7 +1117,15 @@
     "official": "https://www.carnival.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "SCHEDULE INDEX \u2014 price/itinerary pending official confirmation",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-25",
+    "flight_return_date": "Not published \u2014 duration pending official confirmation",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "LA-56",
@@ -765,7 +1141,15 @@
     "official": "https://www.princess.com/cruise-search",
     "promo": "No verified sailing-specific promotion found.",
     "status": "SCHEDULE INDEX \u2014 price/itinerary pending official confirmation",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-03-27",
+    "flight_return_date": "Not published \u2014 duration pending official confirmation",
+    "flight_route": "SFO \u2192 LAX \u2192 SFO",
+    "flight_cost_2": "$354 planning estimate",
+    "flight_source": "Expedia route average: $177/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/lax/san-francisco-to-los-angeles",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-49",
@@ -781,7 +1165,15 @@
     "official": "https://disneycruise.disney.go.com/cruises-destinations/list/",
     "promo": "Excluded: departure is before Feb 15 window",
     "status": "OUT OF WINDOW \u2014 excluded",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-02-11",
+    "flight_return_date": "2027-02-16",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "$4,212",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   },
   {
     "id": "SD-50",
@@ -797,6 +1189,62 @@
     "official": "https://www.hollandamerica.com/en/us/find-a-cruise/h7s35a/k714",
     "promo": "Excluded: departure is before Feb 15 window",
     "status": "OUT OF WINDOW \u2014 excluded",
-    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles"
+    "source_url": "https://www.cruisecritic.com/find-a-cruise/month-march-2027/departure-port-los-angeles",
+    "flight_out_date": "2027-02-12",
+    "flight_return_date": "2027-03-21",
+    "flight_route": "SFO \u2192 SAN \u2192 SFO",
+    "flight_cost_2": "$312 planning estimate",
+    "flight_source": "Expedia route average: $156/person round trip",
+    "flight_source_url": "https://www.expedia.com/lp/flights/sfo/san/san-francisco-to-san-diego",
+    "trip_total_2": "Not computable",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
+  },
+  {
+    "id": "SF-51",
+    "name": "Ruby Princess \u2014 Hawaii & Mexico",
+    "line": "Princess Cruises",
+    "date": "2027-02-28",
+    "duration": "16 nights",
+    "port": "San Francisco, CA",
+    "stops": "Hilo; Honolulu; Nawiliwili; Kona; Ensenada; San Francisco",
+    "price": "$3,558",
+    "price_note": "Inside snapshot; total is 2 \u00d7 snapshot",
+    "source": "CruiseSheet itinerary + price snapshot",
+    "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-san-francisco",
+    "promo": "No official sailing-specific promotion confirmed.",
+    "status": "Schedule + price snapshot",
+    "source_url": "https://cruisesheet.com/princess-ruby-16-night-san-francisco-roundtrip-february-28-2027",
+    "flight_out_date": "2027-02-27",
+    "flight_return_date": "2027-03-17",
+    "flight_route": "No flight required (SFO departure)",
+    "flight_cost_2": "$0",
+    "flight_source": "Port matches origin airport city",
+    "flight_source_url": "https://www.google.com/travel/flights",
+    "trip_total_2": "$3,558",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
+  },
+  {
+    "id": "SF-52",
+    "name": "Ruby Princess \u2014 Hawaii & Mexico",
+    "line": "Princess Cruises",
+    "date": "2027-03-16",
+    "duration": "16 nights",
+    "port": "San Francisco, CA",
+    "stops": "Hilo; Honolulu; Kahului; Nawiliwili; Ensenada; San Francisco",
+    "price": "$2,678",
+    "price_note": "Inside snapshot; total is 2 \u00d7 snapshot",
+    "source": "CruiseSheet itinerary + price snapshot",
+    "official": "https://www.princess.com/cruise-destinations/departure-ports/cruises-from-san-francisco",
+    "promo": "No official sailing-specific promotion confirmed.",
+    "status": "Schedule + price snapshot",
+    "source_url": "https://cruisesheet.com/princess-ruby-16-night-san-francisco-roundtrip-march-16-2027",
+    "flight_out_date": "2027-03-15",
+    "flight_return_date": "2027-04-02",
+    "flight_route": "No flight required (SFO departure)",
+    "flight_cost_2": "$0",
+    "flight_source": "Port matches origin airport city",
+    "flight_source_url": "https://www.google.com/travel/flights",
+    "trip_total_2": "$2,678",
+    "trip_total_note": "Cruise snapshot + 2-adult flight planning estimate; live quote required."
   }
 ]
