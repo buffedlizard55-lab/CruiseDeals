@@ -22,6 +22,10 @@ What this pass changed (all traceable in `data/verification_log_2026-08-28_pass2
 - Each row: cruise name, total price for 2 (2 × published interior per-person snapshot; **never guessed**), duration, port stops, official source links, line-level promotions snapshot, review status.
 - Flight plan per row: 2 adults, SFO ⇄ port, **arrive the day before / return the day after**; dated Google Flights search link + KAYAK route-average basis per row. San Francisco departures need no flight.
 
+### Pass 3 — search for 50 new entries (2026-08-28, no additions)
+
+Independent re-read of the 2027 **from-port** indexes (San Diego, Los Angeles, San Francisco, Seattle) plus line sweeps (Celebrity, Virgin, Viking, Oceania, MSC). Result: **0 new qualifying sailings**. The in-window mainstream universe is still **exactly 77**. Inventing 50 extra rows would be hallucination; none were added. Evidence: `data/verification_log_2026-08-28_pass3_search50.csv`. Near-misses (not added): Ruby Princess SF Feb 12 (before window); NCL Star SD Feb 6 / Feb 13; Encore LA Feb 14; Hapag Europa SF Mar 18 (luxury segment); Virgin Brilliant Lady Mar 26 **Miami→LA** (not a West Coast departure); Celebrity Summit next LA sailing May 3 2027; Seattle Alaska season Apr 14.
+
 ### The "50 new entries" request — answered honestly (no hallucination)
 
 A full line-by-line sweep of the 2027 port turnaround schedules found that the prior work had already captured the **entire** universe of mainstream U.S. West Coast departures in the window. There are **not 50 additional genuinely-new sailings** — inventing 50 would require fabrication, which this project refuses to do. What this finalization pass actually produced:
