@@ -32,10 +32,11 @@
   function stateOf(r) {
     if (r.status.indexOf('OUT OF WINDOW') === 0) return 'out';
     if (r.status.indexOf('REVIEW') === 0) return 'review';
-    if (r.status.indexOf('SCHEDULE INDEX') === 0) return 'review';
-    if (r.status.indexOf('NEW 2026-08-28') === 0) return 'new';
+    if (r.status.indexOf('CORRECTED') === 0) return 'fixed';
+    if (r.status.indexOf('RESOLVED') === 0) return 'fixed';
     return 'ok';
   }
+  function priceMoved(r) { return r.price_note && r.price_note.indexOf('(was ') !== -1; }
 
   function rowHtml(r) {
     var st = stateOf(r);
@@ -43,8 +44,10 @@
     var tag =
       st === 'out' ? '<span class="tag tag-out">OUT OF WINDOW</span>' :
       st === 'review' ? '<span class="tag tag-review">REVIEW</span>' :
-      st === 'new' ? '<span class="tag tag-new">NEW · VERIFIED</span>' :
-      '<span class="tag tag-ok">SCHEDULE + SNAPSHOT</span>';
+      st === 'fixed' ? '<span class="tag tag-fixed">' + esc(r.status.split('·')[0].trim()) + '</span>' :
+      '<span class="tag tag-ok">VERIFIED · PASS 2</span>';
+    if (priceMoved(r) && st !== 'review' && st !== 'out')
+      tag += ' <span class="tag tag-moved" title="' + esc(r.price_note) + '">PRICE MOVED ↕</span>';
 
     var cur = r.price_currency === 'GBP' ? '£' : '$';
     var priceTxt = r.price === 'Not published' ? r.price
@@ -88,14 +91,17 @@
   function init(data) {
     // summary stats
     var inWin = data.filter(function (r) { return stateOf(r) !== 'out'; });
-    var newRows = data.filter(function (r) { return stateOf(r) === 'new'; });
+    var verified = inWin.filter(function (r) { return stateOf(r) === 'ok' || stateOf(r) === 'fixed'; });
     var flagged = data.filter(function (r) { return stateOf(r) === 'review'; });
+    var moved = inWin.filter(priceMoved);
     var priced = inWin.filter(function (r) { return moneyNum(r.trip_total_2) !== Infinity; });
     var cheapest = priced.sort(function (a, b) { return moneyNum(a.trip_total_2) - moneyNum(b.trip_total_2); })[0];
     $('stat-sailings').textContent = inWin.length;
-    $('stat-new').textContent = newRows.length;
+    $('stat-new').textContent = verified.length;
     $('stat-cheapest').textContent = cheapest ? cheapest.trip_total_2 : '—';
     $('stat-flagged').textContent = flagged.length;
+    var movedLine = document.getElementById('stat-moved-line');
+    if (movedLine) movedLine.textContent = moved.length + ' row(s) moved price since the first sweep (shown with PRICE MOVED ↕).';
 
     // flag panel
     $('flags-list').innerHTML = flagged.map(function (r) {
@@ -119,7 +125,8 @@
     function applyFilters(r, q, line, port, dur, state) {
       var st = stateOf(r);
       if (state === 'in' && st === 'out') return false;
-      if (state === 'new' && st !== 'new') return false;
+      if (state === 'moved' && !priceMoved(r)) return false;
+      if (state === 'fixed' && st !== 'fixed') return false;
       if (state === 'review' && st !== 'review') return false;
       if (state === 'priced' && (st === 'out' || moneyNum(r.price) === Infinity)) return false;
       if (line && r.line !== line) return false;

@@ -75,8 +75,11 @@ tbody tr.out td{background:#fbf7f7;color:#7a8394}
 .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
 .tag-ok{color:#0a7c6c;background:var(--teal-wash)}
 .tag-new{color:var(--new);background:var(--new-wash)}
+.tag-fixed{color:var(--new);background:var(--new-wash)}
+.tag-moved{color:#8a5300;background:#fff3d6}
 .tag-review{color:var(--amber);background:var(--amber-wash)}
 .tag-out{color:var(--red);background:var(--red-wash)}
+.hero-note{margin:14px 0 0!important;color:#b9d2ea!important;font-size:13.5px!important}
 .empty{padding:44px;text-align:center;color:var(--muted)}
 
 /* ---------- guardrail / flags / method ---------- */

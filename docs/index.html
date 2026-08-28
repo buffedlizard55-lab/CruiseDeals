@@ -19,7 +19,8 @@
     <nav class="header-actions" aria-label="Data downloads">
       <a href="data/cruises.json" download title="Machine-readable JSON">JSON ↓</a>
       <a href="data/cruises_master_verified.csv" download title="Master spreadsheet">CSV ↓</a>
-      <a href="data/verification_log_2026-08-28.csv" download title="Line-by-line verification log">Verification log ↓</a>
+      <a href="data/verification_log_2026-08-28-pass2.csv" download title="Pass-2 line-by-line verification log (2026-08-28)">Pass-2 log ↓</a>
+      <a href="data/verification_log_2026-08-28.csv" download title="First-sweep verification log">First-sweep log ↓</a>
     </nav>
   </div>
   <div class="hero">
@@ -27,7 +28,9 @@
       <h1>West Coast cruise deals, verified sailing by sailing.</h1>
       <p>Every in-window departure from <strong>San Diego, Los Angeles / San&nbsp;Pedro, Long&nbsp;Beach and San&nbsp;Francisco</strong> between
       <strong>Feb 15 and Mar 31, 2027</strong> — with the 2-adult cruise snapshot, the flight plan from SFO the day before and back the day after,
-      official source links and promotions, all checked line by line.</p>
+      official source links and promotions. All <strong>86 bookable sailings</strong> were checked line by line <em>twice</em> on Aug 28, 2026;
+      a second full pass re-read every per-sailing price, corrected three rows and resolved four unpriced ones.</p>
+      <p class="hero-note" id="stat-moved-line"></p>
     </div>
   </div>
 </header>
@@ -35,8 +38,8 @@
 <main class="container">
 
   <section class="stats" aria-label="Summary">
-    <div class="stat"><strong id="stat-sailings">—</strong><span>in-window sailings</span></div>
-    <div class="stat"><strong id="stat-new">—</strong><span>newly verified (Aug 28, 2026)</span></div>
+    <div class="stat"><strong id="stat-sailings">—</strong><span>in-window sailings (complete population)</span></div>
+    <div class="stat"><strong id="stat-new">—</strong><span>re-verified pass 2 (Aug 28, 2026)</span></div>
     <div class="stat"><strong id="stat-cheapest">—</strong><span>cheapest trip total (2 adults)</span></div>
     <div class="stat stat-warn"><strong id="stat-flagged">—</strong><span>rows flagged for review</span></div>
   </section>
@@ -55,7 +58,8 @@
       </select>
       <select id="f-state" aria-label="Filter by verification status">
         <option value="in">Verified in-window rows</option>
-        <option value="new">New (Aug 28, 2026)</option>
+        <option value="moved">Price moved since first sweep</option>
+        <option value="fixed">Corrected / resolved rows</option>
         <option value="priced">Has price snapshot</option>
         <option value="review">Flagged for review</option>
         <option value="all">Everything incl. exclusions</option>
@@ -93,27 +97,27 @@
 
     <div class="guardrail">
       <strong>Verification guardrail — read before booking.</strong>
-      “Cruise for 2” = 2 × the interior-cabin per-person snapshot published by the linked schedule-index source on Aug 27–28, 2026; it is <em>not</em> a live quote and excludes most taxes/fees.
-      “Flights for 2” = 2 adults round trip SFO ⇄ cruise port (KAYAK route averages, accessed Aug 28, 2026), flying in the day before and back the day after the cruise; use the per-row dated search links for live fares.
+      “Cruise for 2” = 2 × the interior-cabin per-person snapshot on the linked per-sailing index page, re-read on <b>Aug 28, 2026 (pass 2)</b>; it is <em>not</em> a live quote and excludes most taxes/fees. Rows whose snapshot moved since the first sweep are tagged <b>PRICE MOVED ↕</b> with the prior value in the note.
+      “Flights for 2” = 2 adults SFO ⇄ cruise port (KAYAK route data accessed Aug 28, 2026), flying in the day before and back the day after; open-jaw rows (voyages ending in Vancouver or Fort Lauderdale) use one-way bases disclosed on each row. Use the per-row dated Google Flights link for live fares.
       “Trip total” = cruise snapshot + flight estimate. Confirm every number, cabin class and promotion on the official line page (linked per row) before paying.
     </div>
   </section>
 
   <section class="panel flags" id="flags-panel">
     <h2>⚠ Irregularities flagged for manual review</h2>
-    <p class="flags-intro">Found while verifying the Aug 28, 2026 sweep against the 2027 schedule index. Rows stay in the table for audit, marked <b>REVIEW</b>; they should not be treated as bookable.</p>
+    <p class="flags-intro">Found while verifying against the 2027 schedule index (first sweep + pass 2, both Aug 28, 2026). Flagged rows keep their original data and are marked <b>REVIEW</b>; they should not be treated as bookable. Pass 2 additionally <b>corrected</b> three rows (marked on the rows themselves) and <b>resolved</b> four previously unpriced rows.</p>
     <ul id="flags-list"></ul>
   </section>
 
   <section class="method">
     <h2>How this list is built</h2>
     <ol>
-      <li><b>Coverage.</b> 2027 port turnaround schedules for San Diego, Los Angeles (San Pedro), Long Beach, San Francisco and Seattle were swept top to bottom. Seattle has no in-window mainstream departures; Vancouver is out of scope (not U.S.).</li>
-      <li><b>Line by line.</b> Each new row was read off its own per-sailing schedule-index page (date, duration, full port sequence, interior per-person snapshot) and matched to the official cruise-line voyage deep link before being added — 36 new rows on Aug 28, 2026. The verification log CSV lists every check.</li>
-      <li><b>Flights.</b> 2 adults, SFO ⇄ port, arriving the day before embarkation and returning the day after disembarkation. Basis: KAYAK route averages (SFO–SAN $156 pp RT · SFO–LAX $204 pp RT · open-jaw via Vancouver $285 pp), each row linking a dated Google Flights search. San Francisco departures need no flight.</li>
-      <li><b>No padding, no guessing.</b> Carnival Firenze sailings in the window were verified as Miami-based and excluded. Mid-curve port calls (e.g. Emerald Princess visits to SF/SD) were not counted as departures. Where a price is not publishable from a trusted index, the row says so.</li>
+      <li><b>Coverage.</b> 2027 port turnaround schedules for San Diego, Los Angeles (San Pedro), Long Beach, San Francisco and Seattle were swept top to bottom — twice. Seattle has no in-window mainstream departures; Vancouver is out of scope (not U.S.). The 86 bookable in-window sailings listed here <b>are the complete population</b>: pass 2 confirmed no indexed turnaround or voyage variant is missing, so no further genuinely “new” sailings exist to add. Shortest in-window option is 3 nights (no 1–2-night cruises operate from these ports in the window).</li>
+      <li><b>Line by line, twice.</b> Every row was read off its own per-sailing schedule-index page (date, duration, full port sequence, interior per-person snapshot) and matched to the official cruise-line voyage deep link — first sweep Aug 27–28, then a full <b>pass 2 re-read on Aug 28, 2026</b>: 45 prices confirmed, 28 moved (18 down / 10 up), 4 rows gained their first published price, 3 rows were corrected (Island 3/2 → Panama Canal; Serenade 3/28 → La Paz; Wonder 3/26 → +Catalina). Both logs are downloadable.</li>
+      <li><b>Flights.</b> 2 adults, SFO ⇄ port, arriving the day before embarkation and returning the day after disembarkation. Basis: KAYAK route data accessed Aug 28, 2026 (SFO–SAN $156 pp RT · SFO–LAX $204 pp RT · open-jaw SFO→SAN + YVR→SFO $570 for 2 · open-jaw SFO→LAX + FLL→SFO $530 for 2), each row linking a dated Google Flights search. San Francisco departures need no flight.</li>
+      <li><b>No padding, no guessing.</b> Carnival Firenze sailings in the window were verified as Miami-based and excluded. Mid-cruise port calls (e.g. Emerald Princess visits to SF/SD) were not counted as departures. Where a price is not publishable from a trusted index, the row says so — nothing is estimated into existence.</li>
     </ol>
-    <p class="foot">Research snapshot: 2026-08-28 UTC · Scope: U.S. West Coast departure cities, Feb 15 – Mar 31, 2027 · <a href="data/cruises_master_verified.csv">Master CSV</a> · <a href="data/cruise_line_scope_audit.csv">Cruise-line scope audit</a> · <a href="data/verification_log_2026-08-28.csv">Verification log</a>. This project is not a booking engine and makes no guarantee of availability.</p>
+    <p class="foot">Research snapshot: 2026-08-28 UTC (two verification passes) · Scope: U.S. West Coast departure cities, Feb 15 – Mar 31, 2027 · <a href="data/cruises_master_verified.csv">Master CSV</a> · <a href="data/cruise_line_scope_audit.csv">Cruise-line scope audit</a> · <a href="data/verification_log_2026-08-28-pass2.csv">Pass-2 verification log</a> · <a href="data/verification_log_2026-08-28.csv">First-sweep log</a>. This project is not a booking engine and makes no guarantee of availability.</p>
   </section>
 </main>
 
