@@ -38,7 +38,7 @@ for r in rows:
 assert len(in_window) == 77, f"expected 77 in-window rows, got {len(in_window)}"
 with (ROOT / "data/cruise_line_scope_audit.csv").open(newline="") as f:
     audit = list(csv.DictReader(f))
-assert len(audit) == 21, f"expected 21 audit rows, got {len(audit)}"
+assert len(audit) == 24, f"expected 24 audit rows, got {len(audit)}"
 assert all(r["official_review_link"].startswith("https://") for r in audit)
 
 # Keep the browser copy exactly in sync with the source snapshot.
