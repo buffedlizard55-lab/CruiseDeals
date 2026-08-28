@@ -5,6 +5,18 @@ A static GitHub Pages research table for cruises departing **U.S. West Coast por
 ## Final verified state (2026-08-28)
 
 - **79 records** = **77 in-window sailings** (all verified, all with a published USD interior snapshot) + **2 out-of-window rows** retained for audit.
+
+### Pass 2 — independent line-by-line re-verification (2026-08-28)
+
+A second, independent pass re-read every published 2027 schedule for the four U.S. West Coast turnaround ports (San Diego, Los Angeles/San Pedro + Long Beach, San Francisco, Seattle) and then the **per-ship, per-sailing index pages** for all 77 in-window sailings. Every row was re-checked on **date, port, duration, port sequence and published Interior USD price**, and each row now links to a **sailing-specific official deep link** (Disney `DW2236–DW2247`; Royal Caribbean voyage IDs `SR/VY/OV…`; Holland America `k717/k717a/k717b/k718a/k718/k718b/x719`; Princess voyage codes `X709–X714`, `E705–E708`, `R705/R706`, `2705`; NCL `packageId=23338094–99`; carnival.com `sailDate` itinerary links).
+
+What this pass changed (all traceable in `data/verification_log_2026-08-28_pass2.csv`):
+
+- **28 rows refreshed** — published Interior prices had drifted from the first pass's snapshot (e.g. Disney Wonder 19 Feb $1,754→**$1,328** pp; Serenade 18 Feb $288→**$335** pp; Koningsdam 20 Mar 7N $1,044→**$999** pp; Norwegian Encore 21 Feb $699→**$669** pp; Carnival Radiance 28 Feb $394→**$300** pp; Ruby Princess 28 Feb $1,779→**$1,704** pp). All totals recomputed as 2 × snapshot (+ flight estimate where applicable).
+- **2 row corrections (3 fields)** — SD-21: Serenade 28 Mar 2027 7-night is **"Ensenada, Cabo & La Paz"** (official RCI title), not Mazatlán; Interior $649 pp. SD-24: Koningsdam 18-night ends in **Vancouver** — port sequence corrected accordingly and its flight block corrected from roundtrip SFO–SAN to open-jaw `SFO → SAN one-way; YVR → SFO return` ($570 for 2; trip total $4,548).
+- **Scope additions to the audit** — ship-specific sweeps for **Norwegian Star** (last San Diego departure 13 Feb 2027 = 16-night Panama Canal repositioning to Miami → no in-window sailing), **Zuiderdam** (last San Diego departure 30 Jan 2027; Feb/Mar from Miami → no in-window sailing) and **Coral Princess** (Los Angeles call 21 Jan only). The only in-window Seattle event is the Hapag-Lloyd Europa segment call (27–28 Mar) — treated as a port call, not a mainstream departure.
+- **Flight basis re-verified** on KAYAK route pages (2026-08-28): SFO–SAN typical **$134–$287** RT (cheapest seen $78), SFO–LAX typical **$138–$272** RT (cheapest seen $89), YVR–SFO typical **$137–$290** one-way. The planning estimates already in the table stand.
+- **Result: still 77 in-window sailings.** No new genuine sailing was found, so no entry was added and none was invented.
 - Departure cities: **San Diego, Los Angeles (San Pedro), Long Beach, San Francisco**. Seattle was swept — no in-window mainstream departures (season opens Apr 14). Vancouver is out of scope (not a U.S. port; it appears only as the *end* port of two HAL voyage variants, flagged with an open-jaw flight estimate).
 - Cruise lines represented (every mainstream West Coast operator in the window): **Carnival, Disney, Holland America, Norwegian, Princess, Royal Caribbean**. All other lines (Celebrity, MSC, Regent, Silversea, Seabourn, Oceania, Cunard, Azamara, Costa, Windstar, Viking, Hapag-Lloyd, Virgin) were swept and are accounted for in the scope audit.
 - Each row: cruise name, total price for 2 (2 × published interior per-person snapshot; **never guessed**), duration, port stops, official source links, line-level promotions snapshot, review status.
@@ -50,7 +62,8 @@ Snapshot ≠ live quote; availability, cabin category, taxes/fees and promotions
 - [`data/cruises_master_verified.csv`](data/cruises_master_verified.csv) — the master table
 - [`data/cruises.json`](data/cruises.json) — feeds the site (`docs/data/cruises.json` is the site-local snapshot)
 - [`data/verification_log_2026-08-28.csv`](data/verification_log_2026-08-28.csv) — every check, per row (including the 9 removals and 4 finalizations)
-- [`data/cruise_line_scope_audit.csv`](data/cruise_line_scope_audit.csv) — every cruise line swept, with result and evidence (also shown in the page's Coverage audit table)
+- [`data/verification_log_2026-08-28_pass2.csv`](data/verification_log_2026-08-28_pass2.csv) — independent pass-2 line-by-line results for all 79 rows (29 price refreshes, 1 itinerary correction, 1 flight-block correction, 77/77 in-window schedule-index matches)
+- [`data/cruise_line_scope_audit.csv`](data/cruise_line_scope_audit.csv) — every cruise line + ship-specific sweep, with result and evidence (24 rows; also shown in the page's Coverage audit table)
 - [`data/scope_audit.json`](data/scope_audit.json) — browser-readable copy used by GitHub Pages
 
 ## Validation
