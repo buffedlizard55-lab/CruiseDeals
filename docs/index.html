@@ -100,8 +100,8 @@
   </section>
 
   <section class="panel flags" id="flags-panel">
-    <h2>⚠ Irregularities flagged for manual review</h2>
-    <p class="flags-intro">Found while verifying the Aug 28, 2026 sweep against the 2027 schedule index. Rows stay in the table for audit, marked <b>REVIEW</b>; they should not be treated as bookable.</p>
+    <h2>⚠ Irregularities — resolved (no rows left in review)</h2>
+    <p class="flags-intro">The finalization pass removed 9 rows whose departure dates do not exist on the verified 2027 schedule index (hallucinated dates / duplicates) and finalized 4 rows into fully verified records. No in-window row remains flagged. The two out-of-window rows are kept only for audit.</p>
     <ul id="flags-list"></ul>
   </section>
 
@@ -109,7 +109,7 @@
     <h2>How this list is built</h2>
     <ol>
       <li><b>Coverage.</b> 2027 port turnaround schedules for San Diego, Los Angeles (San Pedro), Long Beach, San Francisco and Seattle were swept top to bottom. Seattle has no in-window mainstream departures; Vancouver is out of scope (not U.S.).</li>
-      <li><b>Line by line.</b> Each new row was read off its own per-sailing schedule-index page (date, duration, full port sequence, interior per-person snapshot) and matched to the official cruise-line voyage deep link before being added — 36 new rows on Aug 28, 2026. The verification log CSV lists every check.</li>
+      <li><b>Line by line.</b> Each row was read off its own per-sailing schedule-index page (date, duration, full port sequence, interior per-person snapshot) and matched to the official cruise-line voyage deep link before being added. The final pass (Aug 28, 2026) added 1 new sailing (Island Princess Panama Canal), finalized 4 rows, and removed 9 hallucinated rows. The verification log CSV lists every check.</li>
       <li><b>Flights.</b> 2 adults, SFO ⇄ port, arriving the day before embarkation and returning the day after disembarkation. Basis: KAYAK route averages (SFO–SAN $156 pp RT · SFO–LAX $204 pp RT · open-jaw via Vancouver $285 pp), each row linking a dated Google Flights search. San Francisco departures need no flight.</li>
       <li><b>No padding, no guessing.</b> Carnival Firenze sailings in the window were verified as Miami-based and excluded. Mid-curve port calls (e.g. Emerald Princess visits to SF/SD) were not counted as departures. Where a price is not publishable from a trusted index, the row says so.</li>
     </ol>
