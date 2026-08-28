@@ -50,4 +50,10 @@ Snapshot ≠ live quote; availability, cabin category, taxes/fees and promotions
 - [`data/cruises_master_verified.csv`](data/cruises_master_verified.csv) — the master table
 - [`data/cruises.json`](data/cruises.json) — feeds the site (`docs/data/cruises.json` is the site-local snapshot)
 - [`data/verification_log_2026-08-28.csv`](data/verification_log_2026-08-28.csv) — every check, per row (including the 9 removals and 4 finalizations)
-- [`data/cruise_line_scope_audit.csv`](data/cruise_line_scope_audit.csv) — every cruise line swept, with result and evidence
+- [`data/cruise_line_scope_audit.csv`](data/cruise_line_scope_audit.csv) — every cruise line swept, with result and evidence (also shown in the page's Coverage audit table)
+- [`data/scope_audit.json`](data/scope_audit.json) — browser-readable copy used by GitHub Pages
+
+## Validation
+
+Run `python scripts/validate_data.py` before publishing. It checks the 2027 date window, duplicate IDs, required HTTPS source/search links, USD labeling, audit-row count, and that the browser data copy matches the master JSON. The site deliberately labels route-average airfare and cruise fare snapshots as planning estimates—not live quotes—and keeps the honest result when an open-jaw fare cannot be computed.
+
