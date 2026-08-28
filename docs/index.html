@@ -99,6 +99,22 @@
     </div>
   </section>
 
+  <section class="panel coverage" id="coverage-panel">
+    <div class="section-head">
+      <div>
+        <h2>Coverage audit</h2>
+        <p>Every line and port checked for a qualifying U.S. West Coast departure. “Not represented” means the sweep found no qualifying turnaround in this date window—not that the line never sails the coast.</p>
+      </div>
+      <a class="button-link" href="data/cruise_line_scope_audit.csv" download>Download audit CSV ↓</a>
+    </div>
+    <div class="audit-scroll">
+      <table class="audit-table">
+        <thead><tr><th>Cruise line / scope item</th><th>Result</th><th>Status</th><th>Research note</th><th>Official review</th></tr></thead>
+        <tbody id="audit-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
   <section class="panel flags" id="flags-panel">
     <h2>⚠ Irregularities — resolved (no rows left in review)</h2>
     <p class="flags-intro">The finalization pass removed 9 rows whose departure dates do not exist on the verified 2027 schedule index (hallucinated dates / duplicates) and finalized 4 rows into fully verified records. No in-window row remains flagged. The two out-of-window rows are kept only for audit.</p>

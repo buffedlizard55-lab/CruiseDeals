@@ -78,14 +78,29 @@
     '</tr>';
   }
 
-  fetch(DATA_URL).then(function (res) {
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    return res.json();
-  }).then(init).catch(function (e) {
-    $('count-hint').textContent = 'Data failed to load (' + e.message + '). Use the CSV download link above.';
-  });
+  function loadJson(url) {
+    return fetch(url).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' for ' + url);
+      return res.json();
+    });
+  }
 
-  function init(data) {
+  Promise.all([loadJson(DATA_URL), loadJson('data/scope_audit.json')])
+    .then(function (result) { init(result[0], result[1]); })
+    .catch(function (e) {
+      $('count-hint').textContent = 'Data failed to load (' + e.message + '). Use the CSV download links above.';
+    });
+
+  function init(data, audit) {
+    $('audit-rows').innerHTML = audit.map(function (r) {
+      var statusClass = r.status === 'RESULTS INCLUDED' ? 'audit-pass' :
+        (r.status === 'OUT OF SCOPE' ? 'audit-out' : 'audit-neutral');
+      return '<tr><td><b>' + esc(r.cruise_line) + '</b></td>' +
+        '<td>' + esc(r.west_coast_result) + '</td>' +
+        '<td><span class="audit-status ' + statusClass + '">' + esc(r.status) + '</span></td>' +
+        '<td class="audit-note">' + esc(r.notes) + '</td>' +
+        '<td><a href="' + esc(r.official_review_link) + '" target="_blank" rel="noopener">Official search ↗</a></td></tr>';
+    }).join('');
     // summary stats
     var inWin = data.filter(function (r) { return stateOf(r) !== 'out'; });
     var newRows = data.filter(function (r) { return stateOf(r) === 'new'; });

@@ -79,6 +79,22 @@ tbody tr.out td{background:#fbf7f7;color:#7a8394}
 .tag-out{color:var(--red);background:var(--red-wash)}
 .empty{padding:44px;text-align:center;color:var(--muted)}
 
+/* ---------- coverage audit ---------- */
+.coverage{padding:20px 22px}
+.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:14px}
+.section-head h2{margin:0 0 5px;font-size:17px;letter-spacing:-.3px}
+.section-head p{margin:0;color:var(--muted);font-size:13px;max-width:900px}
+.button-link{display:inline-block;border:1px solid #c9d7e7;border-radius:8px;padding:8px 11px;font-size:12px;white-space:nowrap;background:#fff}
+.audit-scroll{overflow:auto}
+.audit-table{min-width:980px;width:100%;border-collapse:collapse}
+.audit-table th{padding:9px 10px;background:#f7fafd;text-align:left;text-transform:uppercase;letter-spacing:.07em;font-size:10px;color:#68798f;border-bottom:1px solid var(--line)}
+.audit-table td{padding:10px;border-bottom:1px solid #edf1f7;vertical-align:top;font-size:12px}
+.audit-note{max-width:560px;color:#53657a}
+.audit-status{display:inline-block;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;white-space:nowrap}
+.audit-pass{color:#0a7c6c;background:var(--teal-wash)}
+.audit-neutral{color:#75541e;background:var(--amber-wash)}
+.audit-out{color:var(--red);background:var(--red-wash)}
+
 /* ---------- guardrail / flags / method ---------- */
 .guardrail{padding:16px 20px;background:#fffaf0;border-top:1px solid #f2ddb0;
   color:#75541e;font-size:12.5px;line-height:1.6}
