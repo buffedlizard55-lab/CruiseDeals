@@ -26,6 +26,19 @@ What this pass changed (all traceable in `data/verification_log_2026-08-28_pass2
 
 Independent re-read of the 2027 **from-port** indexes (San Diego, Los Angeles, San Francisco, Seattle) plus line sweeps (Celebrity, Virgin, Viking, Oceania, MSC). Result: **0 new qualifying sailings**. The in-window mainstream universe is still **exactly 77**. Inventing 50 extra rows would be hallucination; none were added. Evidence: `data/verification_log_2026-08-28_pass3_search50.csv`. Near-misses (not added): Ruby Princess SF Feb 12 (before window); NCL Star SD Feb 6 / Feb 13; Encore LA Feb 14; Hapag Europa SF Mar 18 (luxury segment); Virgin Brilliant Lady Mar 26 **Miami→LA** (not a West Coast departure); Celebrity Summit next LA sailing May 3 2027; Seattle Alaska season Apr 14.
 
+### Pass 4 — independent re-verification + 50-entry search (2026-08-28, this pass)
+
+A fresh, independent pass re-read the authoritative 2027 **from-port** indexes and monthly pages (all dated **2026-08-28**) and independently re-confirmed the results. Full record of every check: [`data/verification_log_2026-08-28_pass4_independent.csv`](data/verification_log_2026-08-28_pass4_independent.csv) (also mirrored to `docs/data/`).
+
+What the independent pass confirmed:
+
+- **Scope boundaries.** Only **4 U.S. West Coast ports** have in-window ocean cruises: **San Diego, Los Angeles/San Pedro, Long Beach, San Francisco**. **Seattle** — first 2027 departure is Carnival Spirit **Apr 14**, so **0 in-window**. **Oregon** (Astoria/Portland) — river/port-call only, **0 in-window**. Vancouver is out of scope (not a U.S. port; appears only as an *end* port of two HAL variants).
+- **Source authority.** Every row's price is read from a published USD **Interior/Inside per-person** figure on the trusted schedule index (which quotes the official fare feed and links a per-sailing official deep link), then **doubled** for 2 adults. Snapshot ≠ live quote; taxes/cabin/availability require reconfirmation.
+- **Line-by-line cross-check sample (12 rows, all 6 lines, all MATCH).** Disney Wonder SD 3/1 ($1,911pp→$3,822) · Serenade SD 3/7 ($349pp→$698) · Koningsdam SD 3/20 7N ($999pp→$1,998) · Island Princess LA 3/2 16N ($1,879pp→$3,758) · Voyager LA 3/5 7N ($525pp→$1,050) · Ovation LA 3/8 4N ($366pp→$732) · Discovery Princess LA 3/6 7N ($749pp→$1,498) · Carnival Panorama LA 3/7 6N ($334pp→$668) · Carnival Radiance LA 3/9 5N ($401pp→$802) · Norwegian Encore LA 3/7 7N ($689pp→$1,378) · Ruby Princess SF 2/28 16N ($1,704pp→$3,408) · Ruby Princess SF 3/16 16N ($1,264pp→$2,528).
+- **Flight basis re-confirmed.** KAYAK SFO→SAN: typical round-trip **$134–$287**, average **~$156**, lowest ~$77 → matches the table's $156/pp planning basis. SFO→LAX typical **$138–$272**. Estimates remain labelled *planning estimate, live quote required*.
+- **Data integrity.** `python scripts/validate_data.py` → **OK: 77 in-window sailings, 2 audit-only rows, 24 scope checks**; `data/` and `docs/data/` snapshots byte-identical.
+- **Search for 50 new entries → 0 new.** The in-window mainstream universe is still **exactly 77**. No genuinely new qualifying sailing exists in the indexed data; fabricating 50 rows would be hallucination, so none were added. Near-misses (all out-of-window or out-of-scope, not added): Ruby Princess SF Feb 12 · Norwegian Star SD Feb 6/Feb 13 (Panama Canal reposition) · Encore LA Feb 14 · Radiance LA Feb 14 Hawaii · Panorama LA Feb 13 · Hapag-Lloyd Europa SF Mar 18 (EUR luxury) and Seattle 27–28 Mar (port call) · Virgin Brilliant Lady Mar 26 Miami→LA (not a West Coast departure) · Celebrity Summit next LA turnaround May 3 2027 · Seattle Alaska season opens Apr 14.
+
 ### The "50 new entries" request — answered honestly (no hallucination)
 
 A full line-by-line sweep of the 2027 port turnaround schedules found that the prior work had already captured the **entire** universe of mainstream U.S. West Coast departures in the window. There are **not 50 additional genuinely-new sailings** — inventing 50 would require fabrication, which this project refuses to do. What this finalization pass actually produced:
@@ -67,6 +80,8 @@ Snapshot ≠ live quote; availability, cabin category, taxes/fees and promotions
 - [`data/cruises.json`](data/cruises.json) — feeds the site (`docs/data/cruises.json` is the site-local snapshot)
 - [`data/verification_log_2026-08-28.csv`](data/verification_log_2026-08-28.csv) — every check, per row (including the 9 removals and 4 finalizations)
 - [`data/verification_log_2026-08-28_pass2.csv`](data/verification_log_2026-08-28_pass2.csv) — independent pass-2 line-by-line results for all 79 rows (29 price refreshes, 1 itinerary correction, 1 flight-block correction, 77/77 in-window schedule-index matches)
+- [`data/verification_log_2026-08-28_pass3_search50.csv`](data/verification_log_2026-08-28_pass3_search50.csv) — prior 50-entry search evidence
+- [`data/verification_log_2026-08-28_pass4_independent.csv`](data/verification_log_2026-08-28_pass4_independent.csv) — this pass's independent re-verification (scope boundaries, 12-row cross-check across all 6 lines, flight basis, integrity, 0-new 50-entry search)
 - [`data/cruise_line_scope_audit.csv`](data/cruise_line_scope_audit.csv) — every cruise line + ship-specific sweep, with result and evidence (24 rows; also shown in the page's Coverage audit table)
 - [`data/scope_audit.json`](data/scope_audit.json) — browser-readable copy used by GitHub Pages
 
