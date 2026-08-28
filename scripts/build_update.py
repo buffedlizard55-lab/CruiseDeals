@@ -215,8 +215,12 @@ def main():
             if st: r["status"] = st
             r["verification_note"] = note
 
-    # ---- 2. append new verified rows
-    out = list(rows)
+    # ---- 2. rebuild the verified additions by ID
+    # This script is deliberately idempotent: it may be run repeatedly without
+    # duplicating the 36 Aug 28 research rows.  Drop any earlier version of an
+    # addition before materializing the current verified record below.
+    new_ids = {entry[0] for entry in NEW}
+    out = [r for r in rows if r["id"] not in new_ids]
     for ( rid,name,line,dstr,nights,dur,port,rk,stops,pp,idx,off ) in NEW:
         d = date.fromisoformat(dstr)
         assert WINDOW_START <= d <= WINDOW_END, f"{rid} outside window!"
