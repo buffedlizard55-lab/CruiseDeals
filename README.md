@@ -37,4 +37,4 @@ Snapshot ≠ live quote; availability, cabin category, taxes/fees and promotions
 
 - `scripts/build_update.py` — regenerates the CSV/JSON corpus, applies the uniform flight basis, appends verified rows and syncs `docs/data/`.
 - `scripts/flight_search.py` — prints dated flight-search links (Google Flights + KAYAK) per sailing for manual price tracking.
-- GitHub Pages: publish from [`docs/`](docs/) (contains `.nojekyll`; the page is a zero-build static site that reads `docs/data/cruises.json`).
+- GitHub Pages: the zero-build app lives in [`docs/`](docs/) (with `.nojekyll` and its own `data/` snapshot). A root [`index.html`](index.html) forwards to `docs/`, so the existing GitHub Pages **root** source will open the app after this branch is merged; alternatively configure Pages to publish `/docs` directly.
