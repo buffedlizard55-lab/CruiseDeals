@@ -1,6 +1,46 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **238 verified in-window sailings across 14 U.S. departure ports and 10 cruise lines**.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **290 verified in-window sailings across 14 U.S. departure ports and 10 cruise lines**.
+
+## National expansion pass 4 (2026-08-30) — 52 NEW verified entries, mid-week departure sweep
+
+This pass answers a second "search for 50 new entries" request with **52 genuinely new, line-by-line verified in-window sailings**.
+
+### The gap it closes
+
+Passes 1–3 captured the big Florida/Gulf ports only on their **Saturday/Sunday turnaround cluster** dates. A date-coverage audit of the master list exposed the bias: Miami indexes 177 sailings in March 2027 alone, but the master held only **8 Miami dates**. The genuinely missing universe was the **mid-week departures** (Mon/Thu/Fri) and the short **3–4 night** runs that never land on a weekend cluster.
+
+Sweeping the uncovered per-day pages at Miami, Port Canaveral, Fort Lauderdale, Tampa and Galveston produced 52 new rows and pulled in **19 ships that appeared nowhere in the list before**, including Carnival Conquest, Carnival Firenze, Carnival Glory, Carnival Freedom, Carnival Miracle, Carnival Paradise, MSC Seaside, MSC Poesia, Norwegian Joy, Norwegian Getaway, Norwegian Escape, Norwegian Sun, Wonder of the Seas, Utopia of the Seas, Legend of the Seas, Adventure of the Seas, Disney Wish, Brilliant Lady and Celebrity Eclipse.
+
+| Port | New rows |
+| --- | --- |
+| Miami, FL | 27 |
+| Port Canaveral, FL | 14 |
+| Fort Lauderdale, FL | 8 |
+| Galveston, TX | 2 |
+| Tampa, FL | 1 |
+
+### Verification
+
+Every row was read line by line from the cruisetimetables **per-day** from-port 2027 pages (which republish the official cruise-line fare feed and carry a per-sailing official deep link). Four **independent second-source cross-checks** were run:
+
+- **Utopia of the Seas, Port Canaveral 8 Mar** — cruisedirect.com shows Interior $722 / Oceanview $822 / Balcony $804 / Suite $1,244 for the Mar 8–12 sailing: an **exact four-figure match**.
+- **Carnival Glory, Port Canaveral 19 Feb** — dreamvacations Carnival feed matches ship, 3-night duration, the single Celebration Key call and the 3:30 PM departure.
+- **Carnival Firenze, Miami 18 Feb** — the carnival.com deep link resolves live to Miami → Aruba → Curaçao → Grand Turk → Miami; cruiseweb.com independently lists the same Feb 18 2027 sailing.
+- **Nieuw Statendam, Fort Lauderdale 21 Feb** — Holland America's own 2026-27 season press release confirms the 7-day Western Caribbean round trip Fort Lauderdale calling Half Moon Cay, Ocho Rios, Grand Cayman and Cozumel.
+
+### Irregularities flagged, not silently dropped
+
+Six items were **found and deliberately not added**, each logged with its reason in `data/verification_log_2026-08-30_national_expansion_pass4.csv`:
+
+- **Celebrity Silhouette, FLL 21 Feb** — full-ship charter ("Ultimate Disco Cruise"); the fare feed literally publishes `NA`, so there is no bookable public fare to price.
+- **Norwegian Jewel, Miami 15 Feb** — full-ship charter, no public interior fare.
+- **Norwegian Star, Miami 1 Mar** — open jaw, ends in Barcelona; a single SFO round trip cannot honestly be applied.
+- **Explora I, Miami 8 Mar** — open jaw to Barcelona, and an ultra-luxury brand outside the contemporary scope.
+- **Oceania Allura, Miami 11 Mar** — in window and round trip, but the feed shows `Veranda From NA` with only a suite price; no lead-in fare exists to price two adults without guessing.
+- **Carnival Valor, New Orleans 15 Mar** — read from the day page, then **correctly rejected by the automated dedup guard** as already present from an earlier pass.
+
+Three **same-ship/same-date pairs** were retained after review as genuinely distinct bookable voyages (different durations and different official voyage codes): MSC Seaside 4N vs 7N ex-Miami on 15 Feb and 22 Feb, and Nieuw Statendam 7N vs 14N ex-Fort Lauderdale on 21 Feb. The dedup key was tightened this pass to `(port, ship, date, nights)` so these are distinguished automatically while any true duplicate still hard-fails the build.
 
 ## National expansion pass 3 (2026-08-30) — 51 NEW verified entries, 2 brand-new ports
 
