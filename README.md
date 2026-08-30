@@ -1,6 +1,48 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **290 verified in-window sailings across 14 U.S. departure ports and 10 cruise lines**.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **341 verified in-window sailings across 14 U.S. departure ports and 10 cruise lines**.
+
+## National expansion pass 5 (2026-08-30) — 51 NEW verified entries, remaining-date sweep
+
+This pass answers a further "search for 50 new entries" request with **51 genuinely new, line-by-line verified in-window sailings**.
+
+### The gap it closes
+
+Pass 4 fixed the Saturday-cluster bias at Miami and Port Canaveral, but a fresh date-coverage audit showed six ports were still thin — Fort Lauderdale and Tampa held only 6 departure dates each, San Juan 4, Port Canaveral 7, and Miami just 14 of roughly 45 possible dates. This pass sweeps those remaining uncovered per-day pages.
+
+It also adds a **cruise line that was previously missing entirely: Princess Cruises**, which turns out to run a substantial Feb–Mar 2027 program from Fort Lauderdale, Port Canaveral and San Juan (Regal, Sun, Sky, Crown and Enchanted Princess). New ships include Explorer of the Seas, Jewel of the Seas, Vision of the Seas, Symphony of the Seas, Norwegian Prima, Norwegian Gem, Carnival Breeze, Carnival Jubilee and MSC Seascape.
+
+| Port | New rows |
+| --- | --- |
+| Port Canaveral, FL | 17 |
+| Fort Lauderdale, FL | 12 |
+| San Juan, PR | 10 |
+| Miami, FL | 5 |
+| Galveston, TX | 4 |
+| Tampa, FL | 3 |
+
+### Verification
+
+Four **independent second-source cross-checks** were run:
+
+- **Crown Princess, San Juan 21 Feb** — rolcruise.co.uk lists the 14-night sailing under **voyage code 3709A**, an exact match to the code captured from the feed, which simultaneously confirms the same-day 7N/14N pair is two real products.
+- **Symphony of the Seas, Galveston 14 Mar** — icruise.com's March 2027 grid shows the 14 Mar sailing running **Costa Maya first**, distinct from the 7 Mar and 21 Mar sailings which run Roatan first. That confirms the captured itinerary is the correct dated one rather than a generic route.
+- **Explorer of the Seas, Port Canaveral 15 & 29 Mar** — cruisecompete.com lists the Grand Turk "Caribbean Getaway" itinerary with exactly those two in-window dates.
+- **Jewel of the Seas, Tampa 22 Feb** — World Travel Holdings quotes Interior $573 against the feed's $574, a one-dollar match, with an identical port sequence.
+
+### Irregularities flagged
+
+Six items were **found and deliberately not added**, logged in `data/verification_log_2026-08-30_national_expansion_pass5.csv`:
+
+- **Nieuw Statendam, FLL 14 Mar** — full-ship charter (Dave Ramsey "Live Like No One Else"); fare feed publishes `NA`.
+- **Oceania Marina, Miami 25 Mar** — open jaw to Rome/Trieste; the 23-night variant shows `From NA` in every cabin grade.
+- **MSC Poesia, Miami 18 Mar 21N** — departs in window but returns 8 Apr, past the cutoff. The 10-night variant departing the same day is round trip and was added instead.
+- **Explora III, San Juan 7 Mar** — open jaw ending Miami/Barbados, ultra-luxury brand.
+- **New Orleans 22 Feb, Tampa 1 Mar, Galveston 8 Mar** — day pages redirect to the port index, meaning no departures exist. Recorded so these are not re-swept.
+
+One row was **added but carries a price warning**. Explorer of the Seas at Port Canaveral has a verified schedule but a highly volatile interior lead-in: $549 in the feed at build time, $435 on a later re-render of the same page (which also renamed the cruise), and $354 at travelagewest. The dates and itinerary are solid; the price should be treated as indicative only.
+
+Three same-day Crown Princess pairs at San Juan were retained as distinct voyages, each confirmed by separate official voyage codes (3709/3709A, 3710/3710A, 3711/3711A).
 
 ## National expansion pass 4 (2026-08-30) — 52 NEW verified entries, mid-week departure sweep
 
