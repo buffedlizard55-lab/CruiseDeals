@@ -1,6 +1,66 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **441 verified in-window sailings across 14 U.S. departure ports and 12 cruise lines**.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **441 verified in-window sailings across 14 U.S. departure ports and 12 cruise lines**, with a live Google Flights price tracker feeding real 2-adult airfares into the trip totals.
+
+## Live flight price tracker (2026-08-31)
+
+The open item from the brief -- **real bookable airfares instead of route averages** -- is now
+implemented and wired into the trip totals.
+
+**What it does.** `scripts/flights/flight_tracker.py` derives the exact set of flight searches
+implied by the master table (each sailing's `flight_out_date` = sail date - 1 and
+`flight_return_date` = disembark date + 1), builds a canonical Google Flights URL pinned to
+**2 adults / USD / round trip**, parses the fetched result page into structured offers
+(price, airline, stops), and appends every observation to `data/flight_quotes.jsonl`. Because the
+store is append-only, repeated runs build a **price history per itinerary**, which is what makes
+it a tracker rather than a one-off lookup.
+
+`scripts/flights/apply_quotes.py` then folds those quotes into the master table, rewriting
+`flight_cost_2`, `flight_source`, `flight_source_url`, `trip_total_2` and `verification_note`.
+It is idempotent and safe to re-run.
+
+    python3 scripts/flights/flight_tracker.py plan 10   # highest-impact searches still needed
+    python3 scripts/flights/flight_tracker.py status    # coverage
+    python3 scripts/flights/flight_tracker.py history <key>
+    python3 scripts/flights/apply_quotes.py --dry-run
+
+**Anti-hallucination guarantees.** The parser refuses to record a price unless the page itself
+states *"for 2 adults"* -- so a per-person fare can never be silently stored as a 2-adult total.
+Unparseable pages are stored as `MISS`, never as a number. A quote for one date is never reused
+for another date, and a route average is never relabelled as a quote. A 5-point audit re-checks
+every live row against the stored observation: exact price match, exact source-URL match,
+`total = cruise + flight`, dates present in the URL, and `passengers == 2`. It currently passes
+with **0 errors**.
+
+**Coverage so far: 35 of 441 sailings** carry a live dated fare; the other 406 keep their KAYAK
+estimate and are still labelled `planning estimate`, so the two bases are never confused. Live
+fares observed to date:
+
+| Route | Out | Return | KAYAK estimate | LIVE (2 adults) | Delta |
+| --- | --- | --- | --: | --: | --: |
+| SFO-MIA | 2027-02-27 | 2027-03-08 | $844 | **$658** | -$186 |
+| SFO-MIA | 2027-03-13 | 2027-03-22 | $844 | **$818** | -$26 |
+| SFO-MIA | 2027-03-20 | 2027-03-29 | $844 | **$911** | +$67 |
+| SFO-MIA | 2027-03-21 | 2027-03-27 | $844 | **$638** | -$206 |
+| SFO-MCO | 2027-02-19 | 2027-02-28 | $860 | **$673** | -$187 |
+| SFO-MCO | 2027-03-05 | 2027-03-14 | $860 | **$894** | +$34 |
+| SFO-MCO | 2027-03-21 | 2027-03-27 | $860 | **$976** | +$116 |
+| SFO-FLL | 2027-03-20 | 2027-03-29 | $860 | **$848** | -$12 |
+
+The spread (-$206 to +$116) is exactly why route averages were not good enough: they were
+overstating cheap dates and understating peak ones.
+
+**Irregularities flagged, not hidden:**
+
+* A query for `HOU` was resolved by Google to the Houston **metro area** and returned SFO-**IAH**
+  nonstops at $778. Recorded with an explicit flag in the quote store; it is not yet applied to
+  any sailing because no sailing uses that exact date pair.
+* `SJU2-11` is an **open-jaw** trip (SFO->SJU out, MIA->SFO back). It is deliberately left as
+  "Open-jaw - live quote required"; the round-trip tracker does not price it, and the applier
+  skips it rather than substituting a round-trip fare.
+* Outbound `curl` is blocked in the build sandbox (every host returns HTTP 000) and no flight-API
+  key is available, so pages are fetched through the agent's fetch tool. `flight_tracker.py plan`
+  emits the exact reproducible work list.
 
 ## Disney pricing correction (2026-08-31) — 28 rows repriced
 
