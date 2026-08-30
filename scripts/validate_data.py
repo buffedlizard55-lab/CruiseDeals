@@ -15,7 +15,7 @@ MONEY = re.compile(r"^\$[0-9,]+$")
 
 with (ROOT / "data/cruises_master_verified.csv").open(newline="") as f:
     rows = list(csv.DictReader(f))
-assert len(rows) >= 79, f"expected at least 79 rows, got {len(rows)}"
+assert len(rows) >= 129, f"expected at least 129 rows, got {len(rows)}"
 assert len({r["id"] for r in rows}) == len(rows), "duplicate IDs"
 
 in_window = []
@@ -35,7 +35,7 @@ for r in rows:
     if r["trip_total_2"].startswith("$"):
         assert MONEY.match(r["trip_total_2"]), f"{r['id']} malformed total"
 
-assert len(in_window) >= 77, f"expected at least 77 in-window rows, got {len(in_window)}"
+assert len(in_window) >= 127, f"expected at least 127 in-window rows, got {len(in_window)}"
 with (ROOT / "data/cruise_line_scope_audit.csv").open(newline="") as f:
     audit = list(csv.DictReader(f))
 assert len(audit) >= 24, f"expected at least 24 audit rows, got {len(audit)}"
