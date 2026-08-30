@@ -1,6 +1,42 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **341 verified in-window sailings across 14 U.S. departure ports and 10 cruise lines**.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **391 verified in-window sailings across 14 U.S. departure ports and 12 cruise lines**.
+
+## National expansion pass 6 (2026-08-30) — 50 NEW verified entries, date-coverage sweep
+
+Master went **341 → 391 in-window sailings** (393 rows incl. 2 audit-only). Two new cruise
+lines enter the list: **Margaritaville at Sea** and **Explora Journeys** (10 → 12 lines).
+
+Targeting was driven by a per-port **date-coverage audit** — every one of the 45 in-window
+dates checked against the master, per port — then sweeping the highest-yield uncovered
+per-day pages. New rows: **Miami 32, Fort Lauderdale 7, Galveston 6, Port Canaveral 5**.
+By line: MSC 11, Carnival 9, Royal Caribbean 8, NCL 5, Holland America 5, Virgin 4,
+Princess 4, Celebrity 1, Explora 1, Margaritaville 1, Disney 1. Seven ships appear for the
+first time: Harmony of the Seas, MSC Seashore, Disney Magic (Galveston), Zuiderdam,
+Allure of the Seas, Norwegian Aqua and Resilient Lady.
+
+**A real pricing error was caught by cross-checking and fixed.** The cruisetimetables feed
+publishes **Disney fares as a per-stateroom total for two guests, not per person**. The
+Disney Magic Galveston 21 Mar sailing showed `$2,961`; icruise.com and cruiseone both list
+that sailing at **$1,480 per person, double occupancy** — exactly half. The row now stores
+$1,480 pp and a $2,960 two-person cruise total. *Disney rows from earlier passes still use
+the feed value as a per-person figure and should be re-checked against this finding.*
+
+The `(port, ship, date, nights)` dedup guard did real work: it rejected **14 candidates**
+that were already in the master — 4 at Fort Lauderdale 28 Feb (already `FLL4-05/06/07/08`)
+and the entire 10-row Tampa block, which a corrected re-audit confirmed was already held.
+Only genuinely new sailings were written.
+
+Also recorded: three **zero-sailing days** (FLL 11 Mar, Galveston 4 Mar, New Orleans 8 Mar —
+each day URL redirects to the port landing page), the **Norwegian Jewel "Keeping The Blues
+Alive At Sea XII" charter** (fare feed literally "NA"), **open-jaw exclusions** (Azamara
+Journey 37N/12N and Explora III 7N, all Miami 29 Mar), and two flagged inclusions — the
+**Margaritaville at Sea Beachcomber**, whose feed entry carries only a generic homepage link
+rather than a per-sailing deep link, and the **Explora III 14N at $9,675 per guest**, an
+ultra-luxury outlier well outside the contemporary price band.
+
+Evidence: `data/verification_log_2026-08-30_national_expansion_pass6.csv`
+(50 verified + 12 flag/annotation rows).
 
 ## National expansion pass 5 (2026-08-30) — 51 NEW verified entries, remaining-date sweep
 
