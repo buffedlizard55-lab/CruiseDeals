@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CruiseDeals — West Coast 2027 · Verified cruise + flight planner</title>
-<meta name="description" content="Line-by-line verified cruises departing U.S. West Coast ports Feb 15 – Mar 31, 2027, with 2-adult price snapshots, SFO flight estimates and trip totals.">
+<title>CruiseDeals — U.S. Ports 2027 · Verified cruise + flight planner</title>
+<meta name="description" content="Line-by-line verified cruises departing U.S. ports (West Coast, Gulf Coast & Florida) Feb 15 – Mar 31, 2027, with 2-adult price snapshots, SFO flight estimates and trip totals.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,20 +14,22 @@
   <div class="container header-bar">
     <a class="brand" href="./" aria-label="CruiseDeals home">
       <span class="brand-mark" aria-hidden="true">CD</span>
-      <span class="brand-text"><strong>CruiseDeals</strong><small>West Coast 2027 · verified research table</small></span>
+      <span class="brand-text"><strong>CruiseDeals</strong><small>U.S. ports 2027 · verified research table</small></span>
     </a>
     <nav class="header-actions" aria-label="Data downloads">
+      <a href="CRUISE_DEALS_BY_PORT.md" title="Clean per-port tables (Markdown)">By-port report ↗</a>
       <a href="data/cruises.json" download title="Machine-readable JSON">JSON ↓</a>
       <a href="data/cruises_master_verified.csv" download title="Master spreadsheet">CSV ↓</a>
-      <a href="data/verification_log_2026-08-28.csv" download title="Line-by-line verification log">Verification log ↓</a>
+      <a href="data/verification_log_2026-08-30_national_expansion.csv" download title="Line-by-line verification log (national expansion)">Verification log ↓</a>
     </nav>
   </div>
   <div class="hero">
     <div class="container">
-      <h1>West Coast cruise deals, verified sailing by sailing.</h1>
-      <p>Every in-window departure from <strong>San Diego, Los Angeles / San&nbsp;Pedro, Long&nbsp;Beach and San&nbsp;Francisco</strong> between
-      <strong>Feb 15 and Mar 31, 2027</strong> — with the 2-adult cruise snapshot, the flight plan from SFO the day before and back the day after,
-      official source links and promotions, all checked line by line.</p>
+      <h1>U.S. cruise deals, verified sailing by sailing.</h1>
+      <p>In-window departures from U.S. ports on both coasts — <strong>West Coast</strong> (San Diego, Los Angeles / San&nbsp;Pedro, Long&nbsp;Beach, San&nbsp;Francisco),
+      <strong>Gulf Coast</strong> (Galveston, New&nbsp;Orleans, Tampa) and <strong>Florida</strong> (Port&nbsp;Canaveral, Fort&nbsp;Lauderdale, Miami) — between
+      <strong>Feb 15 and Mar 31, 2027</strong>, each with the 2-adult cruise snapshot, the flight plan from SFO the day before and back the day after,
+      official source links and promotions, all checked line by line. See the <a href="CRUISE_DEALS_BY_PORT.md">clean per-port tables ↗</a>.</p>
     </div>
   </div>
 </header>
@@ -36,7 +38,7 @@
 
   <section class="stats" aria-label="Summary">
     <div class="stat"><strong id="stat-sailings">—</strong><span>in-window sailings</span></div>
-    <div class="stat"><strong id="stat-new">—</strong><span>newly verified (Aug 28, 2026)</span></div>
+    <div class="stat"><strong id="stat-new">—</strong><span>new national rows (Aug 30, 2026)</span></div>
     <div class="stat"><strong id="stat-cheapest">—</strong><span>cheapest trip total (2 adults)</span></div>
     <div class="stat stat-warn"><strong id="stat-flagged">—</strong><span>rows flagged for review</span></div>
   </section>
@@ -103,7 +105,7 @@
     <div class="section-head">
       <div>
         <h2>Coverage audit</h2>
-        <p>Every line and port checked for a qualifying U.S. West Coast departure. “Not represented” means the sweep found no qualifying turnaround in this date window—not that the line never sails the coast.</p>
+        <p>Every line and port checked for a qualifying U.S. departure (West Coast + Gulf + Florida). “Not represented” means the sweep found no qualifying turnaround in this date window—not that the line never sails that coast. Full-ship charters with no public interior fare are flagged OUT OF SCOPE.</p>
       </div>
       <a class="button-link" href="data/cruise_line_scope_audit.csv" download>Download audit CSV ↓</a>
     </div>

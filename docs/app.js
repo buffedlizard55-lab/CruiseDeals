@@ -33,7 +33,7 @@
     if (r.status.indexOf('OUT OF WINDOW') === 0) return 'out';
     if (r.status.indexOf('REVIEW') === 0) return 'review';
     if (r.status.indexOf('SCHEDULE INDEX') === 0) return 'review';
-    if (r.status.indexOf('NEW 2026-08-28') === 0) return 'new';
+    if (r.status.indexOf('NEW ') === 0) return 'new';
     return 'ok';
   }
 
