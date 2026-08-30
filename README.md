@@ -1,6 +1,247 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **441 verified in-window sailings across 14 U.S. departure ports and 12 cruise lines**, with a live Google Flights price tracker feeding real 2-adult airfares into the trip totals.
+
+## Live flight price tracker (2026-08-31)
+
+The open item from the brief -- **real bookable airfares instead of route averages** -- is now
+implemented and wired into the trip totals.
+
+**What it does.** `scripts/flights/flight_tracker.py` derives the exact set of flight searches
+implied by the master table (each sailing's `flight_out_date` = sail date - 1 and
+`flight_return_date` = disembark date + 1), builds a canonical Google Flights URL pinned to
+**2 adults / USD / round trip**, parses the fetched result page into structured offers
+(price, airline, stops), and appends every observation to `data/flight_quotes.jsonl`. Because the
+store is append-only, repeated runs build a **price history per itinerary**, which is what makes
+it a tracker rather than a one-off lookup.
+
+`scripts/flights/apply_quotes.py` then folds those quotes into the master table, rewriting
+`flight_cost_2`, `flight_source`, `flight_source_url`, `trip_total_2` and `verification_note`.
+It is idempotent and safe to re-run.
+
+    python3 scripts/flights/flight_tracker.py plan 10   # highest-impact searches still needed
+    python3 scripts/flights/flight_tracker.py status    # coverage
+    python3 scripts/flights/flight_tracker.py history <key>
+    python3 scripts/flights/apply_quotes.py --dry-run
+
+**Anti-hallucination guarantees.** The parser refuses to record a price unless the page itself
+states *"for 2 adults"* -- so a per-person fare can never be silently stored as a 2-adult total.
+Unparseable pages are stored as `MISS`, never as a number. A quote for one date is never reused
+for another date, and a route average is never relabelled as a quote. A 5-point audit re-checks
+every live row against the stored observation: exact price match, exact source-URL match,
+`total = cruise + flight`, dates present in the URL, and `passengers == 2`. It currently passes
+with **0 errors**.
+
+**Coverage so far: 35 of 441 sailings** carry a live dated fare; the other 406 keep their KAYAK
+estimate and are still labelled `planning estimate`, so the two bases are never confused. Live
+fares observed to date:
+
+| Route | Out | Return | KAYAK estimate | LIVE (2 adults) | Delta |
+| --- | --- | --- | --: | --: | --: |
+| SFO-MIA | 2027-02-27 | 2027-03-08 | $844 | **$658** | -$186 |
+| SFO-MIA | 2027-03-13 | 2027-03-22 | $844 | **$818** | -$26 |
+| SFO-MIA | 2027-03-20 | 2027-03-29 | $844 | **$911** | +$67 |
+| SFO-MIA | 2027-03-21 | 2027-03-27 | $844 | **$638** | -$206 |
+| SFO-MCO | 2027-02-19 | 2027-02-28 | $860 | **$673** | -$187 |
+| SFO-MCO | 2027-03-05 | 2027-03-14 | $860 | **$894** | +$34 |
+| SFO-MCO | 2027-03-21 | 2027-03-27 | $860 | **$976** | +$116 |
+| SFO-FLL | 2027-03-20 | 2027-03-29 | $860 | **$848** | -$12 |
+
+The spread (-$206 to +$116) is exactly why route averages were not good enough: they were
+overstating cheap dates and understating peak ones.
+
+**Irregularities flagged, not hidden:**
+
+* A query for `HOU` was resolved by Google to the Houston **metro area** and returned SFO-**IAH**
+  nonstops at $778. Recorded with an explicit flag in the quote store; it is not yet applied to
+  any sailing because no sailing uses that exact date pair.
+* `SJU2-11` is an **open-jaw** trip (SFO->SJU out, MIA->SFO back). It is deliberately left as
+  "Open-jaw - live quote required"; the round-trip tracker does not price it, and the applier
+  skips it rather than substituting a round-trip fare.
+* Outbound `curl` is blocked in the build sandbox (every host returns HTTP 000) and no flight-API
+  key is available, so pages are fetched through the agent's fetch tool. `flight_tracker.py plan`
+  emits the exact reproducible work list.
+
+## Disney pricing correction (2026-08-31) — 28 rows repriced
+
+Disney Cruise Line publishes its "from" fares as a **per-stateroom total for two guests**, not
+per person. Earlier passes had doubled them, overstating 28 Disney rows by 2x. Verified against
+Costco Travel (Disney Wish, Port Canaveral 3/22, $2,356 pp), AffordableTours (4N Baja 3/8 $936 pp;
+3N Baja 2/26 $876 pp), iCruise/CruiseOne (Disney Magic Galveston 3/21 $1,480 pp) and
+magicguides.com (Disney Magic Galveston 21-26 Feb 2027 "From $2,241" per stateroom).
+
+All 28 affected rows (SD-01..SD-11, SD-49, SD-52, GAL-09, GAL-15, PC-03, PC-10, FLL-06, FLL2-06,
+PC2-03, PC2-08, PC4-02, PC4-07, PC4-12, PC5-02, PC5-06, PC5-11, PC5-15) were halved. `GAL6-01`
+was already corrected during pass 6 and was deliberately left alone. **Going forward, Disney
+figures are used as-is and never doubled** — the pass-7 builder enforces this in code via a
+dedicated `Disney-stateroom` price kind.
+
+## National expansion pass 7 (2026-08-31) — 50 NEW verified entries
+
+Master went **391 → 441 in-window sailings** (443 rows incl. 2 audit-only). Added by port:
+**Miami 24, San Juan 9, Port Canaveral 7, Galveston 6, Fort Lauderdale 4**.
+
+Targeting was driven by a per-port audit of all 45 in-window dates, deliberately pushing into the
+thinnest calendars (San Juan held only 7 of 45 dates, New Orleans 11, Galveston 14) rather than
+re-mining the Florida mega-ports. Every row was read line by line from the cruisetimetables
+per-day "from port" pages, which republish the official cruise-line fare feed and carry a
+per-sailing official deep link. The builder hard-asserts dedup on `(port, ship, date, nights)`,
+in-window departure, nights >= 2 and HTTPS links; four independent web cross-checks were run.
+
+**Flagged, not added:**
+
+| Sailing | Reason |
+| --- | --- |
+| Crown Princess, San Juan 2027-03-28, 7N | Open jaw — ends Fort Lauderdale (confirmed independently by cruisedig) |
+| Explora III, Miami 2027-03-14, 7N | Open jaw — ends Barbados |
+| Explora III, San Juan 2027-03-07, 7N / 14N | Open jaw (Miami / Barbados) plus ultra-luxury |
+| Zaandam, Fort Lauderdale 2027-03-14, 14N | Open jaw — Panama Canal, ends San Diego |
+| Allure of the Seas, Miami 2027-03-07, 7N | Atlantis Events full-ship charter, price "NA" |
+| Nieuw Statendam, Fort Lauderdale 2027-03-14, 7N | "Live Like No One Else" Dave Ramsey charter, price "NA" |
+| Oceania Allura, Miami 2027-03-21, 10N | No interior/inside grade sold; ultra-luxury |
+| Explora III, Miami 2027-03-14, 15N | Ultra-luxury, $10,185 per guest |
+
+**Same ship, same date, different duration** — retained as distinct bookable voyages: Crown
+Princess SJU 3/14 (14N + 7N), Nieuw Statendam FLL 3/21 (14N + 7N), MSC Meraviglia MIA 3/21 and
+3/7 (6N + 14N each), MSC Poesia MIA 3/7 (11N + 21N).
+
+Evidence log: `data/verification_log_2026-08-31_national_expansion_pass7.csv` (50 rows).
+
+## National expansion pass 6 (2026-08-30) — 50 NEW verified entries, date-coverage sweep
+
+Master went **341 → 391 in-window sailings** (393 rows incl. 2 audit-only). Two new cruise
+lines enter the list: **Margaritaville at Sea** and **Explora Journeys** (10 → 12 lines).
+
+Targeting was driven by a per-port **date-coverage audit** — every one of the 45 in-window
+dates checked against the master, per port — then sweeping the highest-yield uncovered
+per-day pages. New rows: **Miami 32, Fort Lauderdale 7, Galveston 6, Port Canaveral 5**.
+By line: MSC 11, Carnival 9, Royal Caribbean 8, NCL 5, Holland America 5, Virgin 4,
+Princess 4, Celebrity 1, Explora 1, Margaritaville 1, Disney 1. Seven ships appear for the
+first time: Harmony of the Seas, MSC Seashore, Disney Magic (Galveston), Zuiderdam,
+Allure of the Seas, Norwegian Aqua and Resilient Lady.
+
+**A real pricing error was caught by cross-checking and fixed.** The cruisetimetables feed
+publishes **Disney fares as a per-stateroom total for two guests, not per person**. The
+Disney Magic Galveston 21 Mar sailing showed `$2,961`; icruise.com and cruiseone both list
+that sailing at **$1,480 per person, double occupancy** — exactly half. The row now stores
+$1,480 pp and a $2,960 two-person cruise total. *Disney rows from earlier passes still use
+the feed value as a per-person figure and should be re-checked against this finding.*
+
+The `(port, ship, date, nights)` dedup guard did real work: it rejected **14 candidates**
+that were already in the master — 4 at Fort Lauderdale 28 Feb (already `FLL4-05/06/07/08`)
+and the entire 10-row Tampa block, which a corrected re-audit confirmed was already held.
+Only genuinely new sailings were written.
+
+Also recorded: three **zero-sailing days** (FLL 11 Mar, Galveston 4 Mar, New Orleans 8 Mar —
+each day URL redirects to the port landing page), the **Norwegian Jewel "Keeping The Blues
+Alive At Sea XII" charter** (fare feed literally "NA"), **open-jaw exclusions** (Azamara
+Journey 37N/12N and Explora III 7N, all Miami 29 Mar), and two flagged inclusions — the
+**Margaritaville at Sea Beachcomber**, whose feed entry carries only a generic homepage link
+rather than a per-sailing deep link, and the **Explora III 14N at $9,675 per guest**, an
+ultra-luxury outlier well outside the contemporary price band.
+
+Evidence: `data/verification_log_2026-08-30_national_expansion_pass6.csv`
+(50 verified + 12 flag/annotation rows).
+
+## National expansion pass 5 (2026-08-30) — 51 NEW verified entries, remaining-date sweep
+
+This pass answers a further "search for 50 new entries" request with **51 genuinely new, line-by-line verified in-window sailings**.
+
+### The gap it closes
+
+Pass 4 fixed the Saturday-cluster bias at Miami and Port Canaveral, but a fresh date-coverage audit showed six ports were still thin — Fort Lauderdale and Tampa held only 6 departure dates each, San Juan 4, Port Canaveral 7, and Miami just 14 of roughly 45 possible dates. This pass sweeps those remaining uncovered per-day pages.
+
+It also adds a **cruise line that was previously missing entirely: Princess Cruises**, which turns out to run a substantial Feb–Mar 2027 program from Fort Lauderdale, Port Canaveral and San Juan (Regal, Sun, Sky, Crown and Enchanted Princess). New ships include Explorer of the Seas, Jewel of the Seas, Vision of the Seas, Symphony of the Seas, Norwegian Prima, Norwegian Gem, Carnival Breeze, Carnival Jubilee and MSC Seascape.
+
+| Port | New rows |
+| --- | --- |
+| Port Canaveral, FL | 17 |
+| Fort Lauderdale, FL | 12 |
+| San Juan, PR | 10 |
+| Miami, FL | 5 |
+| Galveston, TX | 4 |
+| Tampa, FL | 3 |
+
+### Verification
+
+Four **independent second-source cross-checks** were run:
+
+- **Crown Princess, San Juan 21 Feb** — rolcruise.co.uk lists the 14-night sailing under **voyage code 3709A**, an exact match to the code captured from the feed, which simultaneously confirms the same-day 7N/14N pair is two real products.
+- **Symphony of the Seas, Galveston 14 Mar** — icruise.com's March 2027 grid shows the 14 Mar sailing running **Costa Maya first**, distinct from the 7 Mar and 21 Mar sailings which run Roatan first. That confirms the captured itinerary is the correct dated one rather than a generic route.
+- **Explorer of the Seas, Port Canaveral 15 & 29 Mar** — cruisecompete.com lists the Grand Turk "Caribbean Getaway" itinerary with exactly those two in-window dates.
+- **Jewel of the Seas, Tampa 22 Feb** — World Travel Holdings quotes Interior $573 against the feed's $574, a one-dollar match, with an identical port sequence.
+
+### Irregularities flagged
+
+Six items were **found and deliberately not added**, logged in `data/verification_log_2026-08-30_national_expansion_pass5.csv`:
+
+- **Nieuw Statendam, FLL 14 Mar** — full-ship charter (Dave Ramsey "Live Like No One Else"); fare feed publishes `NA`.
+- **Oceania Marina, Miami 25 Mar** — open jaw to Rome/Trieste; the 23-night variant shows `From NA` in every cabin grade.
+- **MSC Poesia, Miami 18 Mar 21N** — departs in window but returns 8 Apr, past the cutoff. The 10-night variant departing the same day is round trip and was added instead.
+- **Explora III, San Juan 7 Mar** — open jaw ending Miami/Barbados, ultra-luxury brand.
+- **New Orleans 22 Feb, Tampa 1 Mar, Galveston 8 Mar** — day pages redirect to the port index, meaning no departures exist. Recorded so these are not re-swept.
+
+One row was **added but carries a price warning**. Explorer of the Seas at Port Canaveral has a verified schedule but a highly volatile interior lead-in: $549 in the feed at build time, $435 on a later re-render of the same page (which also renamed the cruise), and $354 at travelagewest. The dates and itinerary are solid; the price should be treated as indicative only.
+
+Three same-day Crown Princess pairs at San Juan were retained as distinct voyages, each confirmed by separate official voyage codes (3709/3709A, 3710/3710A, 3711/3711A).
+
+## National expansion pass 4 (2026-08-30) — 52 NEW verified entries, mid-week departure sweep
+
+This pass answers a second "search for 50 new entries" request with **52 genuinely new, line-by-line verified in-window sailings**.
+
+### The gap it closes
+
+Passes 1–3 captured the big Florida/Gulf ports only on their **Saturday/Sunday turnaround cluster** dates. A date-coverage audit of the master list exposed the bias: Miami indexes 177 sailings in March 2027 alone, but the master held only **8 Miami dates**. The genuinely missing universe was the **mid-week departures** (Mon/Thu/Fri) and the short **3–4 night** runs that never land on a weekend cluster.
+
+Sweeping the uncovered per-day pages at Miami, Port Canaveral, Fort Lauderdale, Tampa and Galveston produced 52 new rows and pulled in **19 ships that appeared nowhere in the list before**, including Carnival Conquest, Carnival Firenze, Carnival Glory, Carnival Freedom, Carnival Miracle, Carnival Paradise, MSC Seaside, MSC Poesia, Norwegian Joy, Norwegian Getaway, Norwegian Escape, Norwegian Sun, Wonder of the Seas, Utopia of the Seas, Legend of the Seas, Adventure of the Seas, Disney Wish, Brilliant Lady and Celebrity Eclipse.
+
+| Port | New rows |
+| --- | --- |
+| Miami, FL | 27 |
+| Port Canaveral, FL | 14 |
+| Fort Lauderdale, FL | 8 |
+| Galveston, TX | 2 |
+| Tampa, FL | 1 |
+
+### Verification
+
+Every row was read line by line from the cruisetimetables **per-day** from-port 2027 pages (which republish the official cruise-line fare feed and carry a per-sailing official deep link). Four **independent second-source cross-checks** were run:
+
+- **Utopia of the Seas, Port Canaveral 8 Mar** — cruisedirect.com shows Interior $722 / Oceanview $822 / Balcony $804 / Suite $1,244 for the Mar 8–12 sailing: an **exact four-figure match**.
+- **Carnival Glory, Port Canaveral 19 Feb** — dreamvacations Carnival feed matches ship, 3-night duration, the single Celebration Key call and the 3:30 PM departure.
+- **Carnival Firenze, Miami 18 Feb** — the carnival.com deep link resolves live to Miami → Aruba → Curaçao → Grand Turk → Miami; cruiseweb.com independently lists the same Feb 18 2027 sailing.
+- **Nieuw Statendam, Fort Lauderdale 21 Feb** — Holland America's own 2026-27 season press release confirms the 7-day Western Caribbean round trip Fort Lauderdale calling Half Moon Cay, Ocho Rios, Grand Cayman and Cozumel.
+
+### Irregularities flagged, not silently dropped
+
+Six items were **found and deliberately not added**, each logged with its reason in `data/verification_log_2026-08-30_national_expansion_pass4.csv`:
+
+- **Celebrity Silhouette, FLL 21 Feb** — full-ship charter ("Ultimate Disco Cruise"); the fare feed literally publishes `NA`, so there is no bookable public fare to price.
+- **Norwegian Jewel, Miami 15 Feb** — full-ship charter, no public interior fare.
+- **Norwegian Star, Miami 1 Mar** — open jaw, ends in Barcelona; a single SFO round trip cannot honestly be applied.
+- **Explora I, Miami 8 Mar** — open jaw to Barcelona, and an ultra-luxury brand outside the contemporary scope.
+- **Oceania Allura, Miami 11 Mar** — in window and round trip, but the feed shows `Veranda From NA` with only a suite price; no lead-in fare exists to price two adults without guessing.
+- **Carnival Valor, New Orleans 15 Mar** — read from the day page, then **correctly rejected by the automated dedup guard** as already present from an earlier pass.
+
+Three **same-ship/same-date pairs** were retained after review as genuinely distinct bookable voyages (different durations and different official voyage codes): MSC Seaside 4N vs 7N ex-Miami on 15 Feb and 22 Feb, and Nieuw Statendam 7N vs 14N ex-Fort Lauderdale on 21 Feb. The dedup key was tightened this pass to `(port, ship, date, nights)` so these are distinguished automatically while any true duplicate still hard-fails the build.
+
+## National expansion pass 3 (2026-08-30) — 51 NEW verified entries, 2 brand-new ports
+
+This pass answers the "search for 50 new entries" request with **51 genuinely new, line-by-line verified in-window sailings** — and it found them by closing the two real remaining gaps rather than padding existing ports.
+
+- **Two brand-new U.S. departure ports** (absent from every prior pass):
+  - **Jacksonville, FL** (fly SFO→**JAX**) — **20** sailings: Carnival Elation 4N/5N Bahamas + Norwegian Dawn 4N/5N Bahamas. 106 sailings indexed for 2027; every Feb 15–Mar 31 departure captured.
+  - **Mobile, AL** (fly SFO→**MOB**, no nonstop) — **5** sailings: Carnival Spirit 6N/8N/9N. It is the only in-window operator at the port.
+- **Late-March dates that passes 1–2 stopped short of**: **Miami (12)** incl. Mar 1 / Mar 20 / Mar 27, **New Orleans (11)** incl. Feb 20–Mar 15, **Tampa (3)** Mar 20.
+- **Total is now 240 records = 238 in-window verified sailings + 2 out-of-window audit rows**, across **14 U.S. departure ports** and **10 cruise lines** (Carnival, Royal Caribbean, Norwegian, Disney, Princess, Holland America, Celebrity, MSC, Margaritaville at Sea, Virgin Voyages).
+- **Every new row** was read line by line from the cruisetimetables.com day / from-port 2027 schedule pages (official cruise-line fare feed) and carries: sail date, ship, official cruise name, nights, the **full published port sequence**, a **per-sailing official cruise-line deep link** (carnival.com `sailDate`, ncl.com `packageId`, royalcaribbean.com voyage IDs, msccruisesusa.com cruise IDs) and the **published Interior/Inside per-person USD price**.
+- **Guards enforced in code**, not by eye: a hard dedup assert on `(port, ship, date)` against the existing master, an in-window assert (`2027-02-15 … 2027-03-31`), and a `nights >= 2` assert. Post-build audit re-checked arithmetic (`cruise = 2 × per-person`, `trip total = cruise + flight`), the day-early/day-late flight dates, HTTPS official links and USD labelling on all 51 rows — **0 errors**.
+- **Independent second-source cross-checks (4/4 MATCH)**: Carnival Elation JAX 3/20 (jacksonvillecruiseguide) · Carnival Spirit MOB 3/20 9N (cruisecheap #14114690, incl. full itinerary and return date) · Norwegian Dawn JAX 3/30 5N (cruisebound #116213 + cruiseweb) · Carnival Magic MIA 3/20 8N (cruisesheet, Aruba/Curaçao confirmed).
+- **Flights**: 2 adults, SFO round trip, arrive the day **before** embarkation / return the day **after** disembarkation. New route bases: **JAX $478/pp RT** (KAYAK 12-mo avg, typical $369–$625) · **MOB $457/pp RT** (route average; typical $332–$617; 1 connection required).
+- **Irregularities flagged, not fabricated** (see the pass-3 log): Carnival Spirit Mobile **3/29 16N Panama Canal is OPEN JAW (ends Seattle)** — real sailing, but a single round-trip airfare can't honestly be applied, so it is excluded from the priced list · Norwegian Dawn JAX 4/4 Transatlantic (out of window) · **Charleston, SC** swept → Carnival exited, **zero** 2027 departures · **Cape Liberty/Bayonne, NJ** swept → 2027 season starts **June**, zero in-window · **Honolulu, HI** → no indexed from-port page, so nothing verifiable to add.
+- **Evidence log**: [`data/verification_log_2026-08-30_national_expansion_pass3.csv`](data/verification_log_2026-08-30_national_expansion_pass3.csv) (51 verified rows + 5 flagged). Build scripts: [`scripts/expansion/national_expansion_3.py`](scripts/expansion/national_expansion_3.py), [`scripts/expansion/write_log_pass3.py`](scripts/expansion/write_log_pass3.py). `python scripts/validate_data.py` → **OK: 238 in-window sailings, 2 audit-only rows, 31 scope checks**.
+
+---
 
 ## National expansion pass (2026-08-30) — the "50 new entries", done honestly
 

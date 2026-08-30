@@ -23,10 +23,14 @@ PORT_REGION = {
     "San Francisco, CA": "U.S. West Coast",
     "Galveston, TX": "U.S. Gulf Coast",
     "New Orleans, LA": "U.S. Gulf Coast",
+    "Mobile, AL": "U.S. Gulf Coast",
     "Tampa, FL": "U.S. Gulf Coast",
     "Port Canaveral, FL": "U.S. East Coast (Florida)",
     "Fort Lauderdale, FL": "U.S. East Coast (Florida)",
     "Miami, FL": "U.S. East Coast (Florida)",
+    "Jacksonville, FL": "U.S. East Coast (Florida)",
+    "Baltimore, MD": "U.S. East Coast (Mid-Atlantic)",
+    "San Juan, PR": "U.S. Caribbean (Puerto Rico)",
 }
 PORT_ORDER = list(PORT_REGION.keys())
 
@@ -52,9 +56,17 @@ def main():
     lines = []
     lines.append("# Cruise Deals by U.S. Port — Feb 15 to Mar 31, 2027")
     lines.append("")
+    live = sum(1 for r in rows if "live quote (Google Flights, 2 adults)" in r.get("flight_cost_2", ""))
     lines.append("**2 adults · price = 2 × published interior/inside per-person snapshot · "
-                 "flights = SFO round trip (arrive the day before, fly home the day after), "
-                 "priced at the KAYAK route average × 2 · trip total = cruise + flight.**")
+                 "flights = SFO round trip (arrive the day before, fly home the day after) · "
+                 "trip total = cruise + flight.**")
+    lines.append("")
+    lines.append(f"**Airfare basis:** {live} sailings now carry a **LIVE dated Google Flights fare "
+                 f"for 2 adults** (marked `live quote` in the flight column, with the exact search "
+                 f"URL as the source link). The remaining {len(rows) - live} still use a KAYAK "
+                 f"route-average planning estimate (marked `planning estimate`) and are being "
+                 f"converted progressively — see `data/flight_quotes.jsonl` for the full quote "
+                 f"history and `scripts/flights/` for the tracker.")
     lines.append("")
     lines.append(f"_Snapshot generated from the verified master table. {len(rows)} in-window sailings "
                  f"across {len(ordered)} U.S. departure ports. Prices are planning snapshots, not live "
