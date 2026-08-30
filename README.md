@@ -1,6 +1,51 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **391 verified in-window sailings across 14 U.S. departure ports and 12 cruise lines**.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **441 verified in-window sailings across 14 U.S. departure ports and 12 cruise lines**.
+
+## Disney pricing correction (2026-08-31) — 28 rows repriced
+
+Disney Cruise Line publishes its "from" fares as a **per-stateroom total for two guests**, not
+per person. Earlier passes had doubled them, overstating 28 Disney rows by 2x. Verified against
+Costco Travel (Disney Wish, Port Canaveral 3/22, $2,356 pp), AffordableTours (4N Baja 3/8 $936 pp;
+3N Baja 2/26 $876 pp), iCruise/CruiseOne (Disney Magic Galveston 3/21 $1,480 pp) and
+magicguides.com (Disney Magic Galveston 21-26 Feb 2027 "From $2,241" per stateroom).
+
+All 28 affected rows (SD-01..SD-11, SD-49, SD-52, GAL-09, GAL-15, PC-03, PC-10, FLL-06, FLL2-06,
+PC2-03, PC2-08, PC4-02, PC4-07, PC4-12, PC5-02, PC5-06, PC5-11, PC5-15) were halved. `GAL6-01`
+was already corrected during pass 6 and was deliberately left alone. **Going forward, Disney
+figures are used as-is and never doubled** — the pass-7 builder enforces this in code via a
+dedicated `Disney-stateroom` price kind.
+
+## National expansion pass 7 (2026-08-31) — 50 NEW verified entries
+
+Master went **391 → 441 in-window sailings** (443 rows incl. 2 audit-only). Added by port:
+**Miami 24, San Juan 9, Port Canaveral 7, Galveston 6, Fort Lauderdale 4**.
+
+Targeting was driven by a per-port audit of all 45 in-window dates, deliberately pushing into the
+thinnest calendars (San Juan held only 7 of 45 dates, New Orleans 11, Galveston 14) rather than
+re-mining the Florida mega-ports. Every row was read line by line from the cruisetimetables
+per-day "from port" pages, which republish the official cruise-line fare feed and carry a
+per-sailing official deep link. The builder hard-asserts dedup on `(port, ship, date, nights)`,
+in-window departure, nights >= 2 and HTTPS links; four independent web cross-checks were run.
+
+**Flagged, not added:**
+
+| Sailing | Reason |
+| --- | --- |
+| Crown Princess, San Juan 2027-03-28, 7N | Open jaw — ends Fort Lauderdale (confirmed independently by cruisedig) |
+| Explora III, Miami 2027-03-14, 7N | Open jaw — ends Barbados |
+| Explora III, San Juan 2027-03-07, 7N / 14N | Open jaw (Miami / Barbados) plus ultra-luxury |
+| Zaandam, Fort Lauderdale 2027-03-14, 14N | Open jaw — Panama Canal, ends San Diego |
+| Allure of the Seas, Miami 2027-03-07, 7N | Atlantis Events full-ship charter, price "NA" |
+| Nieuw Statendam, Fort Lauderdale 2027-03-14, 7N | "Live Like No One Else" Dave Ramsey charter, price "NA" |
+| Oceania Allura, Miami 2027-03-21, 10N | No interior/inside grade sold; ultra-luxury |
+| Explora III, Miami 2027-03-14, 15N | Ultra-luxury, $10,185 per guest |
+
+**Same ship, same date, different duration** — retained as distinct bookable voyages: Crown
+Princess SJU 3/14 (14N + 7N), Nieuw Statendam FLL 3/21 (14N + 7N), MSC Meraviglia MIA 3/21 and
+3/7 (6N + 14N each), MSC Poesia MIA 3/7 (11N + 21N).
+
+Evidence log: `data/verification_log_2026-08-31_national_expansion_pass7.csv` (50 rows).
 
 ## National expansion pass 6 (2026-08-30) — 50 NEW verified entries, date-coverage sweep
 
