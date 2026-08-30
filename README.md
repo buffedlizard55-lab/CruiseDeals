@@ -1,6 +1,24 @@
 # CruiseDeals
 
-A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification.
+A static GitHub Pages research table for cruises departing **any U.S. port city** during **February 15 – March 31, 2027**, with 2-adult cruise price snapshots, SFO-based flight planning, trip totals, official source links and line-by-line verification. Currently **238 verified in-window sailings across 14 U.S. departure ports and 10 cruise lines**.
+
+## National expansion pass 3 (2026-08-30) — 51 NEW verified entries, 2 brand-new ports
+
+This pass answers the "search for 50 new entries" request with **51 genuinely new, line-by-line verified in-window sailings** — and it found them by closing the two real remaining gaps rather than padding existing ports.
+
+- **Two brand-new U.S. departure ports** (absent from every prior pass):
+  - **Jacksonville, FL** (fly SFO→**JAX**) — **20** sailings: Carnival Elation 4N/5N Bahamas + Norwegian Dawn 4N/5N Bahamas. 106 sailings indexed for 2027; every Feb 15–Mar 31 departure captured.
+  - **Mobile, AL** (fly SFO→**MOB**, no nonstop) — **5** sailings: Carnival Spirit 6N/8N/9N. It is the only in-window operator at the port.
+- **Late-March dates that passes 1–2 stopped short of**: **Miami (12)** incl. Mar 1 / Mar 20 / Mar 27, **New Orleans (11)** incl. Feb 20–Mar 15, **Tampa (3)** Mar 20.
+- **Total is now 240 records = 238 in-window verified sailings + 2 out-of-window audit rows**, across **14 U.S. departure ports** and **10 cruise lines** (Carnival, Royal Caribbean, Norwegian, Disney, Princess, Holland America, Celebrity, MSC, Margaritaville at Sea, Virgin Voyages).
+- **Every new row** was read line by line from the cruisetimetables.com day / from-port 2027 schedule pages (official cruise-line fare feed) and carries: sail date, ship, official cruise name, nights, the **full published port sequence**, a **per-sailing official cruise-line deep link** (carnival.com `sailDate`, ncl.com `packageId`, royalcaribbean.com voyage IDs, msccruisesusa.com cruise IDs) and the **published Interior/Inside per-person USD price**.
+- **Guards enforced in code**, not by eye: a hard dedup assert on `(port, ship, date)` against the existing master, an in-window assert (`2027-02-15 … 2027-03-31`), and a `nights >= 2` assert. Post-build audit re-checked arithmetic (`cruise = 2 × per-person`, `trip total = cruise + flight`), the day-early/day-late flight dates, HTTPS official links and USD labelling on all 51 rows — **0 errors**.
+- **Independent second-source cross-checks (4/4 MATCH)**: Carnival Elation JAX 3/20 (jacksonvillecruiseguide) · Carnival Spirit MOB 3/20 9N (cruisecheap #14114690, incl. full itinerary and return date) · Norwegian Dawn JAX 3/30 5N (cruisebound #116213 + cruiseweb) · Carnival Magic MIA 3/20 8N (cruisesheet, Aruba/Curaçao confirmed).
+- **Flights**: 2 adults, SFO round trip, arrive the day **before** embarkation / return the day **after** disembarkation. New route bases: **JAX $478/pp RT** (KAYAK 12-mo avg, typical $369–$625) · **MOB $457/pp RT** (route average; typical $332–$617; 1 connection required).
+- **Irregularities flagged, not fabricated** (see the pass-3 log): Carnival Spirit Mobile **3/29 16N Panama Canal is OPEN JAW (ends Seattle)** — real sailing, but a single round-trip airfare can't honestly be applied, so it is excluded from the priced list · Norwegian Dawn JAX 4/4 Transatlantic (out of window) · **Charleston, SC** swept → Carnival exited, **zero** 2027 departures · **Cape Liberty/Bayonne, NJ** swept → 2027 season starts **June**, zero in-window · **Honolulu, HI** → no indexed from-port page, so nothing verifiable to add.
+- **Evidence log**: [`data/verification_log_2026-08-30_national_expansion_pass3.csv`](data/verification_log_2026-08-30_national_expansion_pass3.csv) (51 verified rows + 5 flagged). Build scripts: [`scripts/expansion/national_expansion_3.py`](scripts/expansion/national_expansion_3.py), [`scripts/expansion/write_log_pass3.py`](scripts/expansion/write_log_pass3.py). `python scripts/validate_data.py` → **OK: 238 in-window sailings, 2 audit-only rows, 31 scope checks**.
+
+---
 
 ## National expansion pass (2026-08-30) — the "50 new entries", done honestly
 

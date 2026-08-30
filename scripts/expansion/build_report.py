@@ -23,10 +23,14 @@ PORT_REGION = {
     "San Francisco, CA": "U.S. West Coast",
     "Galveston, TX": "U.S. Gulf Coast",
     "New Orleans, LA": "U.S. Gulf Coast",
+    "Mobile, AL": "U.S. Gulf Coast",
     "Tampa, FL": "U.S. Gulf Coast",
     "Port Canaveral, FL": "U.S. East Coast (Florida)",
     "Fort Lauderdale, FL": "U.S. East Coast (Florida)",
     "Miami, FL": "U.S. East Coast (Florida)",
+    "Jacksonville, FL": "U.S. East Coast (Florida)",
+    "Baltimore, MD": "U.S. East Coast (Mid-Atlantic)",
+    "San Juan, PR": "U.S. Caribbean (Puerto Rico)",
 }
 PORT_ORDER = list(PORT_REGION.keys())
 

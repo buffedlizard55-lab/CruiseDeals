@@ -180,5 +180,40 @@
   "status": "OUT OF SCOPE",
   "official_review_link": "https://www.cruisetimetables.com/",
   "notes": "2026-08-30: real in-window sailings from New Orleans (Mariner of the Seas), Fort Lauderdale (Eurodam) and Miami, but sold as full-ship charters with NO published public interior fare (price = NA). Flagged and intentionally NOT added to the priced master list to avoid fabricating a price."
+ },
+ {
+  "cruise_line": "Jacksonville FL (port) — NEW",
+  "west_coast_result": "20 in-window sailings added (Carnival Elation 4N/5N; Norwegian Dawn 4N/5N Bahamas)",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.cruisetimetables.com/cruises-from-jacksonville-florida-2027.html",
+  "notes": "2026-08-30 pass 3: brand-new port, absent from all prior passes. 106 sailings indexed for 2027; every departure between Feb 15 and Mar 31 captured (20). Fly SFO-JAX. Carnival Elation is contracted at JaxPort through spring 2027."
+ },
+ {
+  "cruise_line": "Mobile AL (port) — NEW",
+  "west_coast_result": "5 in-window sailings added (Carnival Spirit 6N/8N/9N)",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.cruisetimetables.com/cruises-from-mobile-alabama-2027.html",
+  "notes": "2026-08-30 pass 3: brand-new port. 44 sailings indexed for 2027; Carnival Spirit is the only in-window operator. 6 in-window departures exist; 5 added, the 29 Mar 16N Panama Canal is OPEN JAW (ends Seattle) and is flagged, not priced. Fly SFO-MOB (no nonstop)."
+ },
+ {
+  "cruise_line": "Charleston SC (port)",
+  "west_coast_result": "No in-window sailings — port has no 2027 departures",
+  "status": "PORT CHECKED",
+  "official_review_link": "https://www.cruisetimetables.com/cruises-from-charleston-south-carolina.html",
+  "notes": "2026-08-30 pass 3: Carnival exited Charleston; the port page carries an empty calendar and no 2027 year page exists. Zero in-window departures."
+ },
+ {
+  "cruise_line": "Cape Liberty / Bayonne NJ (port)",
+  "west_coast_result": "No in-window sailings — 2027 season starts June",
+  "status": "PORT CHECKED",
+  "official_review_link": "https://cruisedig.com/cruises/departing_from/1307239/departure_date/2027-09",
+  "notes": "2026-08-30 pass 3: Royal Caribbean's 2027 Cape Liberty season (Independence of the Seas, Oasis of the Seas) and Celebrity Silhouette begin in June 2027. No Feb 15 - Mar 31 2027 departures. Not added."
+ },
+ {
+  "cruise_line": "Honolulu HI (port)",
+  "west_coast_result": "No verifiable in-window turnaround",
+  "status": "PORT CHECKED",
+  "official_review_link": "https://www.cruisetimetables.com/",
+  "notes": "2026-08-30 pass 3: no 2027 Honolulu from-port page is published on the schedule index, so no in-window departure could be verified from a trusted source. Nothing added rather than guess."
  }
 ]
