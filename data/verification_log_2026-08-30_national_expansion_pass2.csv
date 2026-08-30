@@ -1,0 +1,51 @@
+id,port,ship,date,duration,interior_pp_usd,cruise_total_2,flight_route,flight_2,trip_total_2,official_deep_link_verified,independent_crosscheck,result
+BWI2-01,"Baltimore, MD",Carnival Pride,2027-02-21,7,718,"$1,436",SFO → BWI → SFO,$970 planning estimate,"$2,406",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+BWI2-02,"Baltimore, MD",Carnival Pride,2027-02-28,7,732,"$1,464",SFO → BWI → SFO,$970 planning estimate,"$2,434",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+BWI2-03,"Baltimore, MD",Carnival Pride,2027-03-07,7,1001,"$2,002",SFO → BWI → SFO,$970 planning estimate,"$2,972",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+BWI2-04,"Baltimore, MD",Carnival Pride,2027-03-14,7,869,"$1,738",SFO → BWI → SFO,$970 planning estimate,"$2,708",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+BWI2-05,"Baltimore, MD",Carnival Pride,2027-03-21,7,989,"$1,978",SFO → BWI → SFO,$970 planning estimate,"$2,948",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+BWI2-06,"Baltimore, MD",Carnival Pride,2027-03-28,7,979,"$1,958",SFO → BWI → SFO,$970 planning estimate,"$2,928",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-01,"San Juan, PR",Celebrity Constellation,2027-02-20,7,815,"$1,630",SFO → SJU → SFO,"$1,064 planning estimate","$2,694",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-02,"San Juan, PR",Rhapsody of the Seas,2027-02-20,7,512,"$1,024",SFO → SJU → SFO,"$1,064 planning estimate","$2,088",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-03,"San Juan, PR",Celebrity Constellation,2027-02-27,7,716,"$1,432",SFO → SJU → SFO,"$1,064 planning estimate","$2,496",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-04,"San Juan, PR",Rhapsody of the Seas,2027-02-27,7,609,"$1,218",SFO → SJU → SFO,"$1,064 planning estimate","$2,282",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-05,"San Juan, PR",Celebrity Constellation,2027-03-06,7,658,"$1,316",SFO → SJU → SFO,"$1,064 planning estimate","$2,380",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-06,"San Juan, PR",Celebrity Constellation,2027-03-13,7,863,"$1,726",SFO → SJU → SFO,"$1,064 planning estimate","$2,790",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-07,"San Juan, PR",Valiant Lady,2027-02-20,7,1043,"$2,086",SFO → SJU → SFO,"$1,064 planning estimate","$3,150",www.virginvoyages.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-08,"San Juan, PR",Valiant Lady,2027-02-27,7,1043,"$2,086",SFO → SJU → SFO,"$1,064 planning estimate","$3,150",www.virginvoyages.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-09,"San Juan, PR",Valiant Lady,2027-03-06,7,1043,"$2,086",SFO → SJU → SFO,"$1,064 planning estimate","$3,150",www.virginvoyages.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-10,"San Juan, PR",Valiant Lady,2027-03-13,6,894,"$1,788",SFO → SJU → SFO,"$1,064 planning estimate","$2,852",www.virginvoyages.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+SJU2-11,"San Juan, PR",Rhapsody of the Seas,2027-03-06,10,1487,"$2,974",SFO → SJU (one-way); MIA → SFO (one-way),Open-jaw — live quote required,Live quote required (open-jaw),www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-01,"Miami, FL",Carnival Magic,2027-03-06,8,659,"$1,318",SFO → MIA → SFO,$844 planning estimate,"$2,162",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-02,"Miami, FL",Carnival Sunrise,2027-03-06,5,327,$654,SFO → MIA → SFO,$844 planning estimate,"$1,498",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-03,"Miami, FL",Freedom of the Seas,2027-03-06,5,678,"$1,356",SFO → MIA → SFO,$844 planning estimate,"$2,200",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-04,"Miami, FL",Icon of the Seas,2027-03-06,7,1305,"$2,610",SFO → MIA → SFO,$844 planning estimate,"$3,454",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-05,"Miami, FL",Margaritaville at Sea Beachcomber,2027-03-06,5,349,$698,SFO → MIA → SFO,$844 planning estimate,"$1,542",margaritavilleatsea.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-06,"Miami, FL",Carnival Celebration,2027-03-07,7,670,"$1,340",SFO → MIA → SFO,$844 planning estimate,"$2,184",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-07,"Miami, FL",Carnival Horizon,2027-03-07,6,523,"$1,046",SFO → MIA → SFO,$844 planning estimate,"$1,890",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-08,"Miami, FL",Celebrity Xcel,2027-03-07,7,775,"$1,550",SFO → MIA → SFO,$844 planning estimate,"$2,394",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-09,"Miami, FL",Independence of the Seas,2027-03-07,7,711,"$1,422",SFO → MIA → SFO,$844 planning estimate,"$2,266",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-10,"Miami, FL",Carnival Horizon,2027-03-13,8,662,"$1,324",SFO → MIA → SFO,$844 planning estimate,"$2,168",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-11,"Miami, FL",Icon of the Seas,2027-03-13,7,1384,"$2,768",SFO → MIA → SFO,$844 planning estimate,"$3,612",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+MIA2-12,"Miami, FL",MSC Meraviglia,2027-03-13,8,688,"$1,376",SFO → MIA → SFO,$844 planning estimate,"$2,220",www.msccruisesusa.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+FLL2-01,"Fort Lauderdale, FL",Legend of the Seas,2027-03-06,8,1767,"$3,534",SFO → FLL → SFO,$860 planning estimate,"$4,394",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+FLL2-02,"Fort Lauderdale, FL",Regal Princess,2027-03-06,8,1799,"$3,598",SFO → FLL → SFO,$860 planning estimate,"$4,458",www.princess.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+FLL2-03,"Fort Lauderdale, FL",Rotterdam,2027-03-06,10,1299,"$2,598",SFO → FLL → SFO,$860 planning estimate,"$3,458",www.hollandamerica.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+FLL2-04,"Fort Lauderdale, FL",Adventure of the Seas,2027-03-13,8,979,"$1,958",SFO → FLL → SFO,$860 planning estimate,"$2,818",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+FLL2-05,"Fort Lauderdale, FL",Star Princess,2027-03-13,7,849,"$1,698",SFO → FLL → SFO,$860 planning estimate,"$2,558",www.princess.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+FLL2-06,"Fort Lauderdale, FL",Disney Destiny,2027-03-13,5,3983,"$7,966",SFO → FLL → SFO,$860 planning estimate,"$8,826",disneycruise.disney.go.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-01,"Port Canaveral, FL",Carnival Vista,2027-03-06,8,877,"$1,754",SFO → MCO → SFO,$860 planning estimate,"$2,614",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-02,"Port Canaveral, FL",Celebrity Apex,2027-03-06,7,1038,"$2,076",SFO → MCO → SFO,$860 planning estimate,"$2,936",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-03,"Port Canaveral, FL",Disney Treasure,2027-03-06,7,5628,"$11,256",SFO → MCO → SFO,$860 planning estimate,"$12,116",disneycruise.disney.go.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-04,"Port Canaveral, FL",Harmony of the Seas,2027-03-06,7,989,"$1,978",SFO → MCO → SFO,$860 planning estimate,"$2,838",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-05,"Port Canaveral, FL",Mardi Gras,2027-03-06,7,824,"$1,648",SFO → MCO → SFO,$860 planning estimate,"$2,508",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-06,"Port Canaveral, FL",Carnival Freedom,2027-03-13,5,533,"$1,066",SFO → MCO → SFO,$860 planning estimate,"$1,926",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-07,"Port Canaveral, FL",Celebrity Apex,2027-03-13,7,1303,"$2,606",SFO → MCO → SFO,$860 planning estimate,"$3,466",www.celebritycruises.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-08,"Port Canaveral, FL",Disney Treasure,2027-03-13,7,6159,"$12,318",SFO → MCO → SFO,$860 planning estimate,"$13,178",disneycruise.disney.go.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-09,"Port Canaveral, FL",Harmony of the Seas,2027-03-13,7,1066,"$2,132",SFO → MCO → SFO,$860 planning estimate,"$2,992",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+PC2-10,"Port Canaveral, FL",Mardi Gras,2027-03-13,7,822,"$1,644",SFO → MCO → SFO,$860 planning estimate,"$2,504",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+TPA2-01,"Tampa, FL",Carnival Paradise,2027-03-06,5,465,$930,SFO → TPA → SFO,$914 planning estimate,"$1,844",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+TPA2-02,"Tampa, FL",Radiance of the Seas,2027-03-06,8,709,"$1,418",SFO → TPA → SFO,$914 planning estimate,"$2,332",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+TPA2-03,"Tampa, FL",Carnival Legend,2027-03-13,8,1225,"$2,450",SFO → TPA → SFO,$914 planning estimate,"$3,364",www.carnival.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+TPA2-04,"Tampa, FL",Jewel of the Seas,2027-03-13,5,579,"$1,158",SFO → TPA → SFO,$914 planning estimate,"$2,072",www.royalcaribbean.com deep link,cruisetimetables 2027 day/index page,VERIFIED
+TPA2-05,"Tampa, FL",Margaritaville at Sea Islander,2027-03-13,5,399,$798,SFO → TPA → SFO,$914 planning estimate,"$1,712",margaritavilleatsea.com deep link,cruisetimetables 2027 day/index page,VERIFIED

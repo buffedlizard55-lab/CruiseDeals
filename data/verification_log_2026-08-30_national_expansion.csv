@@ -1,0 +1,61 @@
+id,port,ship,date,duration,interior_pp_usd,cruise_total_2,flight_route,flight_2,trip_total_2,official_deep_link_verified,independent_crosscheck,result
+GAL-01,"Galveston, TX",Carnival Breeze,2027-02-18,4,417,834,SFO-HOU-SFO,600,1434,carnival.com sailDate=02182027,cruisetimetables Feb2027 day page,VERIFIED
+GAL-02,"Galveston, TX",Carnival Dream,2027-02-27,7,648,1296,SFO-HOU-SFO,600,1896,carnival.com sailDate=02272027,cruisetimetables 27feb2027 day page,VERIFIED
+GAL-03,"Galveston, TX",Norwegian Viva,2027-02-27,7,859,1718,SFO-HOU-SFO,600,2318,ncl.com packageId=23369093,cruisetimetables 27feb2027 day page,VERIFIED
+GAL-04,"Galveston, TX",Carnival Jubilee,2027-02-28,6,530,1060,SFO-HOU-SFO,600,1660,carnival.com sailDate=02282027,cruisetimetables 28feb2027 day page,VERIFIED
+GAL-05,"Galveston, TX",MSC Seascape,2027-02-28,7,470,940,SFO-HOU-SFO,600,1540,msccruisesusa SC20270228GLSGLS,cruisetimetables 28feb2027 (MSC 'From' fare),VERIFIED (lead-in From fare)
+GAL-06,"Galveston, TX",Symphony of the Seas,2027-02-28,7,862,1724,SFO-HOU-SFO,600,2324,royalcaribbean SY07GAL sail-date 2027-02-28,cruisetimetables 28feb2027 day page,VERIFIED
+GAL-07,"Galveston, TX",Carnival Miracle,2027-03-01,4,467,934,SFO-HOU-SFO,600,1534,carnival.com sailDate=03012027,cruisetimetables Mar2027 index,VERIFIED
+GAL-08,"Galveston, TX",Liberty of the Seas,2027-03-01,5,573,1146,SFO-HOU-SFO,600,1746,royalcaribbean LB05GAL sail-date 2027-03-01,cruisetimetables Mar2027 index,VERIFIED
+GAL-09,"Galveston, TX",Disney Magic,2027-03-03,4,2020,4040,SFO-HOU-SFO,600,4640,disneycruise DM1781,cruisetimetables Mar2027 (Disney Inside),VERIFIED (Inside fare)
+GAL-10,"Galveston, TX",Carnival Miracle,2027-03-05,10,1137,2274,SFO-HOU-SFO,600,2874,carnival.com sailDate=03052027,cruisetimetables Mar2027 index,VERIFIED
+GAL-11,"Galveston, TX",Carnival Dream,2027-03-06,7,738,1476,SFO-HOU-SFO,600,2076,carnival.com sailDate=03062027,cruisetimetables 06mar2027 day page,VERIFIED
+GAL-12,"Galveston, TX",Carnival Jubilee,2027-03-06,8,1224,2448,SFO-HOU-SFO,600,3048,carnival.com sailDate=03062027,cruisetimetables 06mar2027 day page,VERIFIED
+GAL-13,"Galveston, TX",Liberty of the Seas,2027-03-06,5,815,1630,SFO-HOU-SFO,600,2230,royalcaribbean LB05GAL sail-date 2027-03-06,cruisetimetables 06mar2027 day page,VERIFIED
+GAL-14,"Galveston, TX",Norwegian Viva,2027-03-06,7,1039,2078,SFO-HOU-SFO,600,2678,ncl.com packageId=23369094,cruisetimetables 06mar2027 day page,VERIFIED
+GAL-15,"Galveston, TX",Disney Magic,2027-03-07,5,3561,7122,SFO-HOU-SFO,600,7722,disneycruise DM1782,cruisetimetables Mar2027 (Disney Inside),VERIFIED (Inside fare)
+GAL-16,"Galveston, TX",MSC Seascape,2027-03-07,7,620,1240,SFO-HOU-SFO,600,1840,msccruisesusa SC20270307GLSGLS,cruisetimetables Mar2027 (MSC 'From' fare),VERIFIED (lead-in From fare)
+GAL-17,"Galveston, TX",Carnival Dream,2027-03-20,7,779,1558,SFO-HOU-SFO,600,2158,carnival.com sailDate=03202027,cruisetimetables 20mar2027 day page,VERIFIED
+GAL-18,"Galveston, TX",Carnival Jubilee,2027-03-20,8,914,1828,SFO-HOU-SFO,600,2428,carnival.com sailDate=03202027,cruisetimetables 20mar2027 day page,VERIFIED
+GAL-19,"Galveston, TX",Liberty of the Seas,2027-03-20,5,603,1206,SFO-HOU-SFO,600,1806,royalcaribbean LB05GAL sail-date 2027-03-20,cruisetimetables 20mar2027 day page,VERIFIED
+GAL-20,"Galveston, TX",Norwegian Viva,2027-03-20,7,1109,2218,SFO-HOU-SFO,600,2818,ncl.com packageId=23369096,cruisetimetables 20mar2027 day page,VERIFIED
+NOLA-01,"New Orleans, LA",Carnival Valor,2027-02-15,5,394,788,SFO-MSY-SFO,840,1628,carnival.com sailDate=02152027,cruisetimetables Feb2027 index,VERIFIED
+NOLA-02,"New Orleans, LA",Carnival Valor,2027-02-20,5,370,740,SFO-MSY-SFO,840,1580,carnival.com sailDate=02202027,cruisetimetables 20feb2027 day page,VERIFIED
+NOLA-03,"New Orleans, LA",Carnival Valor,2027-03-06,5,514,1028,SFO-MSY-SFO,840,1868,carnival.com sailDate=03062027,cruisetimetables 06mar2027 day page,VERIFIED
+NOLA-04,"New Orleans, LA",Mariner of the Seas,2027-03-06,7,646,1292,SFO-MSY-SFO,840,2132,royalcaribbean MA07MSY sail-date 2027-03-06,cruisetimetables 06mar2027 day page,VERIFIED
+NOLA-05,"New Orleans, LA",Carnival Valor,2027-03-20,5,679,1358,SFO-MSY-SFO,840,2198,carnival.com sailDate=03202027,cruisetimetables 20mar2027 day page,VERIFIED
+NOLA-06,"New Orleans, LA",Mariner of the Seas,2027-03-20,7,635,1270,SFO-MSY-SFO,840,2110,royalcaribbean MA07MSY sail-date 2027-03-20,cruisetimetables 20mar2027 day page,VERIFIED
+PC-01,"Port Canaveral, FL",Carnival Vista,2027-02-20,8,701,1402,SFO-MCO-SFO,860,2262,carnival.com sailDate=02202027,cruisetimetables 20feb2027 day page,VERIFIED
+PC-02,"Port Canaveral, FL",Celebrity Apex,2027-02-20,7,977,1954,SFO-MCO-SFO,860,2814,celebritycruises AX07W681,cruisetimetables 20feb2027 day page,VERIFIED
+PC-03,"Port Canaveral, FL",Disney Treasure,2027-02-20,7,4732,9464,SFO-MCO-SFO,860,10324,disneycruise WT0114,cruisetimetables 20feb2027 (Disney Inside),VERIFIED (Inside fare)
+PC-04,"Port Canaveral, FL",Harmony of the Seas,2027-02-20,5,639,1278,SFO-MCO-SFO,860,2138,royalcaribbean HM05PCN sail-date 2027-02-20,cruisetimetables 20feb2027 day page,VERIFIED
+PC-05,"Port Canaveral, FL",Mardi Gras,2027-02-20,7,571,1142,SFO-MCO-SFO,860,2002,carnival.com sailDate=02202027,cruisetimetables 20feb2027 day page,VERIFIED
+PC-06,"Port Canaveral, FL",MSC Grandiosa,2027-02-20,7,433,866,SFO-MCO-SFO,860,1726,msccruisesusa GR20270220CPVCPV,cruisetimetables 20feb2027 (MSC 'From' fare),VERIFIED (lead-in From fare)
+PC-07,"Port Canaveral, FL",MSC Grandiosa,2027-02-20,14,776,1552,SFO-MCO-SFO,860,2412,msccruisesusa GR20270220CPVCP1,cruisetimetables 20feb2027 (MSC 'From' fare),VERIFIED (lead-in From fare)
+PC-08,"Port Canaveral, FL",Carnival Freedom,2027-02-27,5,323,646,SFO-MCO-SFO,860,1506,carnival.com sailDate=02272027,cruisetimetables 27feb2027 day page,VERIFIED
+PC-09,"Port Canaveral, FL",Celebrity Apex,2027-02-27,7,1224,2448,SFO-MCO-SFO,860,3308,celebritycruises AX07E469,cruisetimetables 27feb2027 day page,VERIFIED
+PC-10,"Port Canaveral, FL",Disney Treasure,2027-02-27,7,5174,10348,SFO-MCO-SFO,860,11208,disneycruise WT0115,cruisetimetables 27feb2027 (Disney Inside),VERIFIED (Inside fare)
+PC-11,"Port Canaveral, FL",Mardi Gras,2027-02-27,7,577,1154,SFO-MCO-SFO,860,2014,carnival.com sailDate=02272027,cruisetimetables 27feb2027 day page,VERIFIED
+PC-12,"Port Canaveral, FL",MSC Grandiosa,2027-02-27,7,343,686,SFO-MCO-SFO,860,1546,msccruisesusa GR20270227CPVCPV,cruisetimetables 27feb2027 (MSC 'From' fare),VERIFIED (lead-in From fare)
+TPA-01,"Tampa, FL",Margaritaville at Sea Islander,2027-02-20,7,499,998,SFO-TPA-SFO,914,1912,margaritavilleatsea.com,cruisetimetables 20feb2027 day page,VERIFIED
+TPA-02,"Tampa, FL",Radiance of the Seas,2027-02-20,7,618,1236,SFO-TPA-SFO,914,2150,royalcaribbean RD07TPA sail-date 2027-02-20,cruisetimetables + icruise (interior 618),VERIFIED (2 sources)
+TPA-03,"Tampa, FL",Jewel of the Seas,2027-02-27,5,560,1120,SFO-TPA-SFO,914,2034,royalcaribbean JW05TPA sail-date 2027-02-27,cruisetimetables 27feb2027 day page,VERIFIED
+TPA-04,"Tampa, FL",Margaritaville at Sea Islander,2027-02-27,5,399,798,SFO-TPA-SFO,914,1712,margaritavilleatsea.com,cruisetimetables 27feb2027 day page,VERIFIED
+TPA-05,"Tampa, FL",Radiance of the Seas,2027-02-27,7,565,1130,SFO-TPA-SFO,914,2044,royalcaribbean RD07TPA sail-date 2027-02-27,cruisetimetables 27feb2027 day page,VERIFIED
+FLL-01,"Fort Lauderdale, FL",Legend of the Seas,2027-02-20,8,1674,3348,SFO-FLL-SFO,860,4208,royalcaribbean LE08FLL sail-date 2027-02-20,cruisetimetables 20feb2027 day page,VERIFIED
+FLL-02,"Fort Lauderdale, FL",Regal Princess,2027-02-20,8,984,1968,SFO-FLL-SFO,860,2828,princess.com voyageCode=G709,cruisetimetables 20feb2027 day page,VERIFIED
+FLL-03,"Fort Lauderdale, FL",Regal Princess,2027-02-20,14,1199,2398,SFO-FLL-SFO,860,3258,princess.com voyageCode=G709A,cruisetimetables 20feb2027 day page,VERIFIED
+FLL-04,"Fort Lauderdale, FL",Adventure of the Seas,2027-02-27,8,1121,2242,SFO-FLL-SFO,860,3102,royalcaribbean AD08FLL sail-date 2027-02-27,cruisetimetables 27feb2027 day page,VERIFIED
+FLL-05,"Fort Lauderdale, FL",Caribbean Princess,2027-02-27,6,449,898,SFO-FLL-SFO,860,1758,princess.com voyageCode=B706,cruisetimetables 27feb2027 day page,VERIFIED
+FLL-06,"Fort Lauderdale, FL",Disney Destiny,2027-02-27,5,3313,6626,SFO-FLL-SFO,860,7486,disneycruise WD0099,cruisetimetables 27feb2027 (Disney Inside),VERIFIED (Inside fare)
+FLL-07,"Fort Lauderdale, FL",Eurodam,2027-02-27,10,1199,2398,SFO-FLL-SFO,860,3258,hollandamerica.com c7e10b/d724,cruisetimetables 27feb2027 (HAL Inside),VERIFIED (Inside fare; official link is line search page)
+FLL-08,"Fort Lauderdale, FL",Star Princess,2027-02-27,14,2053,4106,SFO-FLL-SFO,860,4966,princess.com voyageCode=4710A,cruisetimetables 27feb2027 day page,VERIFIED
+MIA-01,"Miami, FL",Carnival Magic,2027-02-20,8,559,1118,SFO-MIA-SFO,844,1962,carnival.com sailDate=02202027,cruisetimetables + icruise + nauticalflock,VERIFIED (3 sources)
+MIA-02,"Miami, FL",Carnival Sunrise,2027-02-20,5,297,594,SFO-MIA-SFO,844,1438,carnival.com sailDate=02202027,cruisetimetables 20feb2027 day page,VERIFIED
+MIA-03,"Miami, FL",Freedom of the Seas,2027-02-20,5,486,972,SFO-MIA-SFO,844,1816,royalcaribbean FR05MIA sail-date 2027-02-20,cruisetimetables 20feb2027 day page,VERIFIED
+MIA-04,"Miami, FL",Icon of the Seas,2027-02-20,7,1191,2382,SFO-MIA-SFO,844,3226,royalcaribbean IC07MIA sail-date 2027-02-20,cruisetimetables 20feb2027 day page,VERIFIED
+MIA-05,"Miami, FL",MSC World America,2027-02-20,14,1436,2872,SFO-MIA-SFO,844,3716,msccruisesusa AM20270220MIAMI1,cruisetimetables 20feb2027 (MSC 'From' fare),VERIFIED (lead-in From fare)
+MIA-06,"Miami, FL",Allure of the Seas,2027-02-21,7,1035,2070,SFO-MIA-SFO,844,2914,royalcaribbean AL07MIA sail-date 2027-02-21,cruisetimetables 21feb2027 day page,VERIFIED
+MIA-07,"Miami, FL",Carnival Celebration,2027-02-21,7,547,1094,SFO-MIA-SFO,844,1938,carnival.com sailDate=02212027,cruisetimetables 21feb2027 day page,VERIFIED
+MIA-08,"Miami, FL",Carnival Horizon,2027-02-21,6,452,904,SFO-MIA-SFO,844,1748,carnival.com sailDate=02212027,cruisetimetables 21feb2027 day page,VERIFIED
+MIA-09,"Miami, FL",Celebrity Xcel,2027-02-21,7,851,1702,SFO-MIA-SFO,844,2546,celebritycruises XC07E472,cruisetimetables 21feb2027 day page,VERIFIED

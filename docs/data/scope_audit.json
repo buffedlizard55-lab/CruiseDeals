@@ -1,170 +1,184 @@
 [
-  {
-    "cruise_line": "Carnival Cruise Line",
-    "west_coast_result": "Long Beach records included (Panorama; Radiance)",
-    "status": "RESULTS INCLUDED",
-    "official_review_link": "https://www.carnival.com/cruise-search",
-    "notes": "2026-08-28 pass 2: re-verified Long Beach sailings - Panorama 6N/8N (Feb 21/27, Mar 7/13/21/27) and Radiance 4N/5N/14N Hawaii (Feb 28, Mar 4/9/14/28) with carnival.com sailing deep links (sailDate queries). Carnival Firenze verified out of scope (Feb 18 - Mar 22, 2027 departures roundtrip Miami). Radiance 14N Feb 14 departure & Panorama Feb 7/13 departures fall outside 2027-02-15 start."
-  },
-  {
-    "cruise_line": "Disney Cruise Line",
-    "west_coast_result": "San Diego records included",
-    "status": "RESULTS INCLUDED",
-    "official_review_link": "https://disneycruise.disney.go.com/cruises-destinations/list/",
-    "notes": "2026-08-28 pass 2: re-verified all 12 in-window Disney Wonder San Diego sailings on the monthly per-sailing index + official Disney deep links DW2236-DW2247. Note: disneycruise.disney.go.com per-sailing pages are reCAPTCHA-gated to automated readers; the indexed Interior USD prices are from cruisetimetables (which quotes from the official fare feed)."
-  },
-  {
-    "cruise_line": "Holland America Line",
-    "west_coast_result": "San Diego records included (Koningsdam; Zaandam)",
-    "status": "RESULTS INCLUDED",
-    "official_review_link": "https://www.hollandamerica.com/en/us/find-a-cruise",
-    "notes": "2026-08-28 pass 2: Koningsdam Mar 20 (7N/14N/18N; k717/k717b/k717a) and Mar 27 (7N/11N/28N; k718a/k718/k718b) plus Zaandam Mar 28 7N (x719) verified on monthly pages. Zuiderdam swept separately: final San Diego call/departure 2027-01-30 (15-night Panama Canal to Miami); Feb-Mar 2027 schedules are Miami roundtrips - NO in-window departure, correctly absent. 18N and 11N/28N variants end in Vancouver BC - open-jaw flight estimates used and disclosed. Koningsdam 35-day Feb 13 voyage retained as out-of-window audit row (price not published)."
-  },
-  {
-    "cruise_line": "Norwegian Cruise Line",
-    "west_coast_result": "Los Angeles records included",
-    "status": "RESULTS INCLUDED",
-    "official_review_link": "https://www.ncl.com/cruises",
-    "notes": "2026-08-28 pass 2: Encore Sunday departures Feb 21 - Mar 28 confirmed against monthly per-sailing indices (packageId 23338094-99). Norwegian Star swept separately: its last San Diego departure is 2027-02-13 (16-night Panama Canal repositioning San Diego -> Miami per NCL itinerary family/globaljourneys; cruisetimetables San Diego index shows no Star call after Feb 13) - NO in-window West Coast departure, correctly absent."
-  },
-  {
-    "cruise_line": "Princess Cruises",
-    "west_coast_result": "San Pedro records included (Discovery; Emerald; Island); San Francisco records included (Ruby)",
-    "status": "RESULTS INCLUDED",
-    "official_review_link": "https://www.princess.com/cruise-search",
-    "notes": "2026-08-28 pass 2: verified 6 Discovery Princess Saturdays (X709-X714), Emerald 2/26 16N Hawaii (E705) + 3/14/21/28 7N Classic California Coast (E706/E707/E708), Ruby 2/28 + 3/16 16N Hawaii from SF (R705/R706), Island 3/2 16N Panama Canal (2705, one-way to Fort Lauderdale, open-jaw flight). Coral Princess swept separately: LA call Jan 21 2027 only (per LA schedule index) - no in-window departure. Emerald SF appearances (Mar 16, Mar 25-26, Mar 30) verified as mid-cruise PORT CALLS, not turnarounds."
-  },
-  {
-    "cruise_line": "Royal Caribbean",
-    "west_coast_result": "Los Angeles/San Pedro and San Diego records included",
-    "status": "RESULTS INCLUDED",
-    "official_review_link": "https://www.royalcaribbean.com/cruises",
-    "notes": "2026-08-28 pass 2: verified 6 Voyager + 10 Ovation San Pedro sailings and 11 Serenade of the Seas San Diego sailings (Feb 18 - Mar 28) against monthly per-sailing indices + royalcaribbean.com voyage deep links. Correction: Serenade Mar 28 7-night calls at LA PAZ (not Mazatlan): official title '7 Night Ensenada, Cabo & La Paz' (SR07SAN-394531984)."
-  },
-  {
-    "cruise_line": "Celebrity Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.celebritycruises.com/cruises",
-    "notes": "No in-window West Coast turnaround found in 2027 port schedules (2026-08-28 sweep)."
-  },
-  {
-    "cruise_line": "MSC Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.msccruises.com/our-cruises",
-    "notes": "MSC Poesia first Seattle turnaround indexed Apr 26 2027 — outside window."
-  },
-  {
-    "cruise_line": "Regent Seven Seas Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.rssc.com/cruises",
-    "notes": "Seven Seas Prestige departed LA Feb 10 2027 (out of window); Splendor departed LA Feb 7, 2027 (out of window). No in-window West Coast departure."
-  },
-  {
-    "cruise_line": "Silversea Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.silversea.com/destinations.html",
-    "notes": "Silver Dawn was a January 2027 port call only."
-  },
-  {
-    "cruise_line": "Seabourn",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.seabourn.com/en_US/find-a-cruise.html",
-    "notes": "No in-window West Coast turnaround found."
-  },
-  {
-    "cruise_line": "Oceania Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.oceaniacruises.com/find-a-cruise",
-    "notes": "Oceania Vista Jan 2027 port calls only."
-  },
-  {
-    "cruise_line": "Cunard",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.cunard.com/en-us/find-a-cruise",
-    "notes": "Queen Victoria Feb 4-5 2027 LA port call (world cruise segment); no in-window turnaround."
-  },
-  {
-    "cruise_line": "Azamara",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.azamara.com/cruises",
-    "notes": "Azamara Quest Jan 2027 port calls only."
-  },
-  {
-    "cruise_line": "Costa Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.costacruises.com/cruises.html",
-    "notes": "Costa Deliziosa Jan 2027 port calls only."
-  },
-  {
-    "cruise_line": "Windstar Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.windstarcruises.com/find-a-cruise/",
-    "notes": "No in-window West Coast turnaround found."
-  },
-  {
-    "cruise_line": "Viking",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.viking.com/oceans/cruises",
-    "notes": "Viking Sky Jan 2027 LA port call only."
-  },
-  {
-    "cruise_line": "Hapag-Lloyd Cruises",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.hl-cruises.com/cruises",
-    "notes": "Europa calls: San Diego Mar 14; San Francisco Mar 17-19; Seattle Mar 27-28, 2027 (arrive overnight, depart next day). Luxury German-market ship on a grand voyage; treated as segment calls, not bookable mainstream West Coast departures."
-  },
-  {
-    "cruise_line": "Virgin Voyages",
-    "west_coast_result": "No qualifying record added",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.virginvoyages.com/",
-    "notes": "Brilliant Lady first San Francisco call indexed May 5 2027 — outside window."
-  },
-  {
-    "cruise_line": "Seattle WA (port)",
-    "west_coast_result": "No in-window US homeport sailings",
-    "status": "PORT CHECKED",
-    "official_review_link": "https://www.cruisetimetables.com/seattle-washington-cruise-ship-schedule-2027.html",
-    "notes": "2027 Seattle season opens Apr 14 (Carnival Spirit); only earlier visitor is Hapag Europa Mar 27-28 segment call. No in-window mainstream departures."
-  },
-  {
-    "cruise_line": "Vancouver BC (port)",
-    "west_coast_result": "Out of scope — not a U.S. port",
-    "status": "OUT OF SCOPE",
-    "official_review_link": "https://www.cruisetimetables.com/",
-    "notes": "User scope is U.S. West Coast port cities. Vancouver appears only as the END port of two HAL sailing variants (flagged on those rows with open-jaw flight estimate)."
-  },
-  {
-    "cruise_line": "Norwegian Star (ship-specific sweep; NCL San Diego)",
-    "west_coast_result": "No qualifying record added — out of window",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.ncl.com/cruises/san-diego",
-    "notes": "2026-08-28: Norwegian Star last San Diego departure 2027-02-13 = 16-night Panama Canal repositioning to Miami (GlobalJourneys/NCL itinerary family). San Diego 2027 index shows no Star turnaround Feb 15 - Mar 31. Encore is the only in-window NCL West Coast ship."
-  },
-  {
-    "cruise_line": "Zuiderdam (ship-specific sweep; Holland America San Diego)",
-    "west_coast_result": "No qualifying record added — out of window",
-    "status": "NOT REPRESENTED",
-    "official_review_link": "https://www.hollandamerica.com/en/us/find-a-cruise",
-    "notes": "2026-08-28: Zuiderdam final San Diego departure 2027-01-30 (15-night Panama Canal to Miami); Feb/Mar 2027 departures are Miami roundtrips (Feb 14, Mar 6). No in-window West Coast departure."
-  },
-  {
-    "cruise_line": "Port-schedule sweep coverage note (US West Coast ports)",
-    "west_coast_result": "All 4 US West Coast turnaround ports swept",
-    "status": "SWEEP COMPLETE",
-    "official_review_link": "https://www.cruisetimetables.com/",
-    "notes": "2026-08-28 pass 2: San Diego, Los Angeles/San Pedro + Long Beach (no separate Long Beach page - covered under Los Angeles), San Francisco and Seattle 2027 indices fully read for Feb 15 - Mar 31. Only in-window Seattle event = Hapag-Lloyd Europa segment call Mar 27-28 (arrive 7th, depart 19th), luxury ship treated as port call. Alaska season starts Apr 14 (Carnival Spirit)."
-  }
+ {
+  "cruise_line": "Carnival Cruise Line",
+  "west_coast_result": "Long Beach records included (Panorama; Radiance)",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.carnival.com/cruise-search",
+  "notes": "2026-08-28 pass 2: re-verified Long Beach sailings - Panorama 6N/8N (Feb 21/27, Mar 7/13/21/27) and Radiance 4N/5N/14N Hawaii (Feb 28, Mar 4/9/14/28) with carnival.com sailing deep links (sailDate queries). Carnival Firenze verified out of scope (Feb 18 - Mar 22, 2027 departures roundtrip Miami). Radiance 14N Feb 14 departure & Panorama Feb 7/13 departures fall outside 2027-02-15 start."
+ },
+ {
+  "cruise_line": "Disney Cruise Line",
+  "west_coast_result": "San Diego records included",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://disneycruise.disney.go.com/cruises-destinations/list/",
+  "notes": "2026-08-28 pass 2: re-verified all 12 in-window Disney Wonder San Diego sailings on the monthly per-sailing index + official Disney deep links DW2236-DW2247. Note: disneycruise.disney.go.com per-sailing pages are reCAPTCHA-gated to automated readers; the indexed Interior USD prices are from cruisetimetables (which quotes from the official fare feed)."
+ },
+ {
+  "cruise_line": "Holland America Line",
+  "west_coast_result": "San Diego records included (Koningsdam; Zaandam)",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.hollandamerica.com/en/us/find-a-cruise",
+  "notes": "2026-08-28 pass 2: Koningsdam Mar 20 (7N/14N/18N; k717/k717b/k717a) and Mar 27 (7N/11N/28N; k718a/k718/k718b) plus Zaandam Mar 28 7N (x719) verified on monthly pages. Zuiderdam swept separately: final San Diego call/departure 2027-01-30 (15-night Panama Canal to Miami); Feb-Mar 2027 schedules are Miami roundtrips - NO in-window departure, correctly absent. 18N and 11N/28N variants end in Vancouver BC - open-jaw flight estimates used and disclosed. Koningsdam 35-day Feb 13 voyage retained as out-of-window audit row (price not published)."
+ },
+ {
+  "cruise_line": "Norwegian Cruise Line",
+  "west_coast_result": "Los Angeles records included",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.ncl.com/cruises",
+  "notes": "2026-08-28 pass 2: Encore Sunday departures Feb 21 - Mar 28 confirmed against monthly per-sailing indices (packageId 23338094-99). Norwegian Star swept separately: its last San Diego departure is 2027-02-13 (16-night Panama Canal repositioning San Diego -> Miami per NCL itinerary family/globaljourneys; cruisetimetables San Diego index shows no Star call after Feb 13) - NO in-window West Coast departure, correctly absent."
+ },
+ {
+  "cruise_line": "Princess Cruises",
+  "west_coast_result": "San Pedro records included (Discovery; Emerald; Island); San Francisco records included (Ruby)",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.princess.com/cruise-search",
+  "notes": "2026-08-28 pass 2: verified 6 Discovery Princess Saturdays (X709-X714), Emerald 2/26 16N Hawaii (E705) + 3/14/21/28 7N Classic California Coast (E706/E707/E708), Ruby 2/28 + 3/16 16N Hawaii from SF (R705/R706), Island 3/2 16N Panama Canal (2705, one-way to Fort Lauderdale, open-jaw flight). Coral Princess swept separately: LA call Jan 21 2027 only (per LA schedule index) - no in-window departure. Emerald SF appearances (Mar 16, Mar 25-26, Mar 30) verified as mid-cruise PORT CALLS, not turnarounds."
+ },
+ {
+  "cruise_line": "Royal Caribbean",
+  "west_coast_result": "Los Angeles/San Pedro and San Diego records included",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.royalcaribbean.com/cruises",
+  "notes": "2026-08-28 pass 2: verified 6 Voyager + 10 Ovation San Pedro sailings and 11 Serenade of the Seas San Diego sailings (Feb 18 - Mar 28) against monthly per-sailing indices + royalcaribbean.com voyage deep links. Correction: Serenade Mar 28 7-night calls at LA PAZ (not Mazatlan): official title '7 Night Ensenada, Cabo & La Paz' (SR07SAN-394531984)."
+ },
+ {
+  "cruise_line": "Celebrity Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.celebritycruises.com/cruises",
+  "notes": "No in-window West Coast turnaround found in 2027 port schedules (2026-08-28 sweep)."
+ },
+ {
+  "cruise_line": "MSC Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.msccruises.com/our-cruises",
+  "notes": "MSC Poesia first Seattle turnaround indexed Apr 26 2027 — outside window."
+ },
+ {
+  "cruise_line": "Regent Seven Seas Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.rssc.com/cruises",
+  "notes": "Seven Seas Prestige departed LA Feb 10 2027 (out of window); Splendor departed LA Feb 7, 2027 (out of window). No in-window West Coast departure."
+ },
+ {
+  "cruise_line": "Silversea Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.silversea.com/destinations.html",
+  "notes": "Silver Dawn was a January 2027 port call only."
+ },
+ {
+  "cruise_line": "Seabourn",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.seabourn.com/en_US/find-a-cruise.html",
+  "notes": "No in-window West Coast turnaround found."
+ },
+ {
+  "cruise_line": "Oceania Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.oceaniacruises.com/find-a-cruise",
+  "notes": "Oceania Vista Jan 2027 port calls only."
+ },
+ {
+  "cruise_line": "Cunard",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.cunard.com/en-us/find-a-cruise",
+  "notes": "Queen Victoria Feb 4-5 2027 LA port call (world cruise segment); no in-window turnaround."
+ },
+ {
+  "cruise_line": "Azamara",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.azamara.com/cruises",
+  "notes": "Azamara Quest Jan 2027 port calls only."
+ },
+ {
+  "cruise_line": "Costa Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.costacruises.com/cruises.html",
+  "notes": "Costa Deliziosa Jan 2027 port calls only."
+ },
+ {
+  "cruise_line": "Windstar Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.windstarcruises.com/find-a-cruise/",
+  "notes": "No in-window West Coast turnaround found."
+ },
+ {
+  "cruise_line": "Viking",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.viking.com/oceans/cruises",
+  "notes": "Viking Sky Jan 2027 LA port call only."
+ },
+ {
+  "cruise_line": "Hapag-Lloyd Cruises",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.hl-cruises.com/cruises",
+  "notes": "Europa calls: San Diego Mar 14; San Francisco Mar 17-19; Seattle Mar 27-28, 2027 (arrive overnight, depart next day). Luxury German-market ship on a grand voyage; treated as segment calls, not bookable mainstream West Coast departures."
+ },
+ {
+  "cruise_line": "Virgin Voyages",
+  "west_coast_result": "No qualifying record added",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.virginvoyages.com/",
+  "notes": "Brilliant Lady first San Francisco call indexed May 5 2027 — outside window."
+ },
+ {
+  "cruise_line": "Seattle WA (port)",
+  "west_coast_result": "No in-window US homeport sailings",
+  "status": "PORT CHECKED",
+  "official_review_link": "https://www.cruisetimetables.com/seattle-washington-cruise-ship-schedule-2027.html",
+  "notes": "2027 Seattle season opens Apr 14 (Carnival Spirit); only earlier visitor is Hapag Europa Mar 27-28 segment call. No in-window mainstream departures."
+ },
+ {
+  "cruise_line": "Vancouver BC (port)",
+  "west_coast_result": "Out of scope — not a U.S. port",
+  "status": "OUT OF SCOPE",
+  "official_review_link": "https://www.cruisetimetables.com/",
+  "notes": "User scope is U.S. West Coast port cities. Vancouver appears only as the END port of two HAL sailing variants (flagged on those rows with open-jaw flight estimate)."
+ },
+ {
+  "cruise_line": "Norwegian Star (ship-specific sweep; NCL San Diego)",
+  "west_coast_result": "No qualifying record added — out of window",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.ncl.com/cruises/san-diego",
+  "notes": "2026-08-28: Norwegian Star last San Diego departure 2027-02-13 = 16-night Panama Canal repositioning to Miami (GlobalJourneys/NCL itinerary family). San Diego 2027 index shows no Star turnaround Feb 15 - Mar 31. Encore is the only in-window NCL West Coast ship."
+ },
+ {
+  "cruise_line": "Zuiderdam (ship-specific sweep; Holland America San Diego)",
+  "west_coast_result": "No qualifying record added — out of window",
+  "status": "NOT REPRESENTED",
+  "official_review_link": "https://www.hollandamerica.com/en/us/find-a-cruise",
+  "notes": "2026-08-28: Zuiderdam final San Diego departure 2027-01-30 (15-night Panama Canal to Miami); Feb/Mar 2027 departures are Miami roundtrips (Feb 14, Mar 6). No in-window West Coast departure."
+ },
+ {
+  "cruise_line": "Port-schedule sweep coverage note (US West Coast ports)",
+  "west_coast_result": "All 4 US West Coast turnaround ports swept",
+  "status": "SWEEP COMPLETE",
+  "official_review_link": "https://www.cruisetimetables.com/",
+  "notes": "2026-08-28 pass 2: San Diego, Los Angeles/San Pedro + Long Beach (no separate Long Beach page - covered under Los Angeles), San Francisco and Seattle 2027 indices fully read for Feb 15 - Mar 31. Only in-window Seattle event = Hapag-Lloyd Europa segment call Mar 27-28 (arrive 7th, depart 19th), luxury ship treated as port call. Alaska season starts Apr 14 (Carnival Spirit)."
+ },
+ {
+  "cruise_line": "National scope expansion (Gulf + East Coast)",
+  "west_coast_result": "Galveston, New Orleans, Tampa, Port Canaveral, Fort Lauderdale, Miami — 60 in-window sailings added",
+  "status": "RESULTS INCLUDED",
+  "official_review_link": "https://www.cruisetimetables.com/",
+  "notes": "2026-08-30: user scope is ANY U.S. port, not just the West Coast. Added 60 verified in-window sailings from 6 Gulf/East ports (Carnival, Royal Caribbean, Norwegian, MSC, Disney, Princess, Celebrity, Holland America, Margaritaville at Sea). Each row carries a per-sailing official cruise-line deep link + published interior/inside USD price from the official fare feed; flights priced SFO round-trip at KAYAK route averages. Evidence: data/verification_log_2026-08-30_national_expansion.csv."
+ },
+ {
+  "cruise_line": "Charter/theme sailings (excluded)",
+  "west_coast_result": "Star Trek: The Cruise; The 80s Cruise; JoCo Cruise; Rock Legends; Jam Cruise",
+  "status": "OUT OF SCOPE",
+  "official_review_link": "https://www.cruisetimetables.com/",
+  "notes": "2026-08-30: real in-window sailings from New Orleans (Mariner of the Seas), Fort Lauderdale (Eurodam) and Miami, but sold as full-ship charters with NO published public interior fare (price = NA). Flagged and intentionally NOT added to the priced master list to avoid fabricating a price."
+ }
 ]
